@@ -1,0 +1,381 @@
+body {
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  background: url(/images/mobile/background-pre-mobile-.jpg) no-repeat center
+    center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* MOBILE */
+
+.breadcrumbs {
+  display: inline-flex;
+  list-style-type: none;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: white;
+}
+
+.breadcrumbs a {
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+  color: var(--primary-color);
+}
+
+h1 {
+  position: absolute;
+  top: -5rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  line-height: 1.2;
+  font-size: 2.4rem;
+}
+
+.fas {
+  padding: 0 10px;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin: auto;
+  margin-top: 6rem;
+}
+
+.gameinfo,
+.system {
+  display: none;
+}
+
+.reviews {
+  padding: 0;
+}
+
+.img-details-info-wrap {
+  width: 100%;
+  height: 600px;
+  padding: 1rem;
+}
+
+.img-header {
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+
+.img-add {
+  width: 200px;
+  object-position: center;
+  object-fit: cover;
+  margin-top: 1rem;
+}
+
+.game-details {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.flex-platform-release {
+  display: flex;
+  justify-content: center;
+}
+
+.genre,
+.platform,
+.requirements,
+.publish {
+  list-style: none;
+  padding: 0;
+  line-height: 1.5;
+}
+
+.platform {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.platform span {
+  margin-right: 20px;
+  display: none;
+}
+
+.container-error {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.rate {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 2rem auto 1rem auto; /* NEW */
+  width: 280px;
+  /* display: none; */
+}
+
+.rating {
+  margin-top: 8rem;
+}
+
+.ratings-box {
+  display: flex;
+  border-radius: 6px;
+  color: white;
+  align-items: center;
+  width: 100%;
+}
+
+.recommended {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.recommended p {
+  margin: 4px 0;
+}
+
+/* ----------- */
+
+.hidePlat {
+  display: none;
+}
+
+.plat-logo {
+  width: 18px;
+  margin: 5px;
+}
+
+.ps4 {
+  width: 32px;
+}
+
+.vita {
+  width: 90px;
+}
+
+.android {
+  width: 40px;
+}
+
+.xbox {
+  width: 23px;
+}
+
+.xbox-series {
+  width: 30px;
+}
+
+.ios {
+  width: 25px;
+}
+
+h3 {
+  color: var(--primary-color);
+}
+
+.details-header {
+  display: flex;
+}
+
+.intro-heading {
+  text-align: center;
+  width: 100%;
+  padding: 0 1rem;
+  margin-top: 2rem;
+}
+
+.pricetag {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+#buy {
+  margin: 3rem auto;
+}
+
+#buy-extra {
+  margin: 3rem auto 2rem auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.recommended-box {
+  padding: 5px 10px;
+  color: black;
+  width: 100%;
+}
+
+.exceptional {
+  background-color: lightblue;
+}
+
+.skip {
+  background-color: red;
+}
+
+.meh {
+  background-color: orange;
+}
+
+.recommendedrate {
+  background-color: lightgreen;
+}
+
+.intro-text {
+  font-size: 1rem;
+  font-weight: lighter;
+  line-height: 1.2;
+}
+
+.cartName {
+  margin: 0;
+}
+
+.cartInfo p:nth-child(2) {
+  margin: 0;
+}
+
+@media only screen and (min-width: 640px) {
+  h1 {
+    font-size: 2.8rem;
+    position: relative;
+    line-height: 1.2;
+    margin: 0;
+    margin-bottom: 2rem;
+    font-size: 2.4rem;
+    top: initial;
+    left: initial;
+    right: initial;
+  }
+
+  .container {
+    flex-direction: row;
+    margin-top: unset;
+    margin-bottom: 11rem;
+  }
+
+  .gameinfo,
+  .system {
+    display: block;
+    margin-bottom: 3rem;
+  }
+
+  .flex-platform-release {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .platform {
+    justify-content: center;
+  }
+
+  #buy-extra {
+    left: 50%;
+  }
+}
+
+@media only screen and (min-width: 890px) {
+  .container {
+    margin-top: 1rem;
+    margin-bottom: 13rem;
+  }
+  .rate {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 1rem auto;
+    width: 100%;
+    display: none;
+  }
+
+  .ratings-box {
+    display: flex;
+    border-radius: 6px;
+    color: white;
+    align-items: center;
+    width: 100%;
+  }
+
+  .recommended {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .platform span {
+    display: initial;
+  }
+
+  .flex-platform-release {
+    justify-content: left;
+    margin-top: 1rem;
+  }
+
+  .platform {
+    justify-content: left;
+  }
+
+  .intro-heading {
+    width: 50%;
+    padding: 0 3rem 0 1.5rem;
+    text-align: left;
+  }
+
+  #buy {
+    margin: 5rem;
+  }
+
+  #buy-extra {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  h1 {
+    font-size: 4rem;
+    text-align: left;
+  }
+
+  .container {
+    margin-bottom: unset;
+  }
+
+  .img-details-info-wrap {
+    width: 50%;
+    height: 1000px;
+    padding: 1rem;
+  }
+
+  .img-header {
+    height: 45%;
+  }
+
+  .flex-platform-release {
+    flex-direction: row;
+  }
+
+  #buy-extra {
+    display: none;
+  }
+
+  .rating {
+    margin-top: 1rem;
+  }
+}

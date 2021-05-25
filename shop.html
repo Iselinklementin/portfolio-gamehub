@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Enjoy offers from fellow gamers, sell your own game or buy the newest game on the marked, right here on Gamehub!">
+    <meta name="keywords" content="games, sell games, online shop, online games, mmorpg, mmo, xbox, ps, pc, nintendo">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@0,400;0,900;1,400;1,700&display=swap"
+      rel="stylesheet"/>
+    <link href="styles/shop.css" rel="stylesheet" />
+    <link href="styles/styles.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="styles/index.css"> -->
+    <script src="https://kit.fontawesome.com/9b8ac118a8.js" crossorigin="anonymous"></script>
+
+    <title>Shop</title>
+  </head>
+  <body>
+    <header>
+            
+      <ul class="skip-links">
+        <li><a href="#main">Skip to the main content</a></li>  
+      </ul>
+
+      <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars"></i></label>
+      <input type="checkbox" id="hamburger-menu" />
+      <div class="nav-logo-center">
+        <a href="index.html"><img class="logo" src="/images/icons/logo.svg" alt="Gamehub logo"/></a>
+      </div>
+      <div class="shoppingcart-wrap">
+          <a href="shopping-cart.html"><img class="shoppingcart-icon" src="/images/icons/shoppingcart.svg" alt="Icon of shopping cart"/></a>
+      </div>
+      
+      <nav>
+        <section class="wrap">
+          <div class="nav-left-container">
+            <section class="nav-li-contain">
+              <a href="index.html">Home</a>
+              <a href="shop.html" class="active" aria-current="page">Shop</a>
+              <a href="sell.html">Sell</a>
+            </section>
+          </div>
+
+          <div class="nav-right-container">
+            <section class="nav-li-contain">
+              <div class="search-bar">
+                <form id="search">
+                  <input type="search" placeholder="Search" aria-label="Search through site">
+                </form>
+            </div>
+              <a href="#" class="search-icon"><i class="fas fa-search"></i></a>
+              <a href="login.html" class="login"><i class="far fa-user"></i><span class="login-text">Log in</span></a>
+            </section>
+            <a href="shopping-cart.html" class="shop-text">Shopping cart</a>
+          </div>
+        </section>
+      </nav>
+  </header>
+
+  <section class="header-search">
+    <form id="search search-mobile">
+      <input id="search-input" type="search" placeholder="Search" aria-label="Search through site">
+    </form>
+</section> 
+
+  <main class="background" id="main">
+
+      <div class="grid">
+        <div class="contain">
+        <h1 class="intro">Choose your <br> weapon</h1>
+
+                  <!-- FILTER PLATFORM -->
+
+
+<section class="platformsfilter">
+        <div class="filter-platform">
+
+        <section data-value="Nintendo Switch" class="containers nintendo-filter">
+          <a role="button"><div data-value="Nintendo Switch" class="box nintendo-box">
+            <img data-value="Nintendo Switch" class="nintendo-gamepad" src="/images/icons/nintendo.svg" alt="Icon of nintendo-gamepad">
+          </div>
+          <div data-value="Nintendo Switch" class="platform plat-name-nintendo">Nintendo</div></a>
+          <div class="nintendo-arrow"></div>
+        </section> <br>
+  
+        <section data-value="PC" class="containers pc-filter">
+          <a role="button"><div data-value="PC" class="box pc-box">
+            <img data-value="PC" class="pc-mouse" src="/images/icons/pc.svg" alt="Icon of pc-mouse"></div>
+          <div data-value="PC" class="platform plat-name-pc">PC</div></a>
+          <div class="pc-arrow"></div>
+        </section>
+  
+        <section data-value="Xbox One" class="containers xbox-filter">
+          <a role="button"><div data-value="Xbox One" class="box xbox-box">
+            <img data-value="Xbox One" class="xbox-gamepad" src="/images/icons/xbox.svg" alt="Icon of xbox-gamepad"></div>
+          <div data-value="Xbox One" class="platform plat-name-xbox">XBOX</div></a>
+          <div class="xbox-arrow"></div>
+        </section>
+  
+        <section data-value="PlayStation 4" class="containers ps-filter">
+          <a role="button"><div data-value="PlayStation 4" class="box ps-box">
+            <img data-value="PlayStation 4" class="ps-gamepad" src="/images/icons/ps.svg" alt="Icon of playstation-gamepad"></div>
+          <div data-value="PlayStation 4" class="platform plat-name-ps">PS</div></a>
+          <div class="ps-arrow"></div>
+        </section>
+        </div>
+    </section>
+  </div>
+    <!-- GALLERY -->
+    
+    <section class="gallerygames">
+        <div class="sort">
+          <div class="sort-head-wrap">
+          <p>Sort by:</p>
+          <div class="filter-btn">All</div>
+        </div>
+        <ul class="dropdown-content" id="drop">
+          <li class="list-item selected" data-value="all">All</li>
+          <li class="list-item" data-value="action">Action</li>
+          <li class="list-item" data-value="adventure">Adventure</li>
+          <li class="list-item" data-value="puzzle">Puzzle</li>
+          <li class="list-item" data-value="strategy">Strategy</li>
+          <li class="list-item" data-value="survival">Survival</li>
+          <li class="list-item" data-value="multiplayer">Multiplayer</li>
+          <li class="list-item" data-value="single player">Single Player</li>
+        </ul> 
+      </div>
+
+        <section class="games-gallery">
+
+                <!------- GALLERY ONE NEW NEW NEW -------->
+
+      <div class="display-one">
+        
+        <section class="games-display-one">
+          <div class="loader"></div>
+        </section>
+      </div>
+
+    <!-- FILTER CATEGORIES -->
+  
+    <section class="filtersyellow">
+        <div class="filter-container">
+          <h3>Categories</h3>
+          <div>
+            <ul class="filter-list">
+              <li class="highlight"><a href="#">Action</a></li>
+              <li class="highlight"><a href="#">Adventure</a></li>
+              <li class="highlight"><a href="#">Mod Toolkit</a></li>
+              <li class="highlight"><a href="#">Puzzle</a></li>
+              <li class="highlight"><a href="#">Racing</a></li>
+              <li class="highlight"><a href="#">RPG</a></li>
+              <li class="highlight"><a href="#">Shooter</a></li>
+              <li class="highlight"><a href="#">Strategy</a></li>
+              <li class="highlight"><a href="#">Survival</a></li>
+            </ul>
+  
+            <!-- FILTER FEATURES -->
+
+            <h3>Features</h3>
+            <ul class="filter-list">
+              <li class="highlight"><a href="#">Controller support</a></li>
+              <li class="highlight"><a href="#">Co-op</a></li>
+              <li class="highlight"><a href="#">Single player</a></li>
+              <li class="highlight"><a href="#">Multiplayer</a></li>
+              <li class="highlight"><a href="#">Windows</a></li>
+              <li class="highlight"><a href="#">Mac OS</a></li>
+            </ul>
+          </div>
+        </div>
+    </section>
+</div>
+
+
+    <!-- MODAL WINDOW -->
+
+    <div class="modal" id="modal1">
+      <div class="modal-dialog">
+
+        <header class="modal-header" id="header-modal">
+          <h3 class="modal-header-text"> 🏆 SUCCESS! 🏆 </h3>
+        </header>
+
+        <section class="modal-content">
+          <p class="success"><span>Excellent choice!</span><br>
+          Your item has been added to the cart.</p>
+          <section class="cartItems">
+            <div class="cartImg"></div>
+            <div class="cartInfo"></div>
+          </section>
+          <div class="buttons-container-modal">
+          <a role="button" class="close-modal button" id="modal-button" data-close>Continue shopping</a>
+          <a href="shopping-cart.html" class="button button-blue modal-button">Go to cart</a>
+          </div>
+        </section>
+
+    <!-- END -->
+
+</main>
+<footer>
+  <img class="footer-logo" src="/images/icons/logo.svg" alt="Gamehub logo"/>
+  <ul>
+    <div class="li-wrap">
+    <section>
+      <li><a href="login.html">Log in</a></li>
+      <li><a href="sell.html">Sell</a></li>
+      <li><a href="create-account.html">Create account</a></li>
+    </section>
+    
+    <section>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="404.html">FAQ</a></li>
+      <li><a href="404.html">Safe payment</a></li>
+    </section>
+  </div>
+
+  <figure>
+    <a href="404.html"><i class="fab fa-facebook"></i></a>
+    <a href="404.html"><i class="fab fa-twitter"></i></a>
+    <a href="404.html"><i class="fab fa-instagram"></i></a>
+  </figure>
+ 
+  </ul>
+</footer>
+<script src="js/shop.js"></script>
+<script src="js/components.js"></script>
+</body>
+</html>

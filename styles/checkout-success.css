@@ -1,0 +1,101 @@
+.background {
+  background-image: url(/images/backgrounds/register-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left 50% bottom 18%;
+  height: 650px;
+  width: 100%;
+  color: var(--white-color);
+  text-align: center;
+}
+
+.intro {
+  position: relative;
+  display: block;
+  font-size: 1.2rem;
+}
+
+h1 {
+  margin: 0;
+  padding-top: 3rem;
+  font-size: 2.8rem;
+  text-align: center;
+  text-shadow: 5px 5px #0b0b0b4f;
+}
+
+.intro p:first-of-type {
+  padding: 3rem 0.8rem 1rem;
+  line-height: 1.5;
+  width: 60%;
+  margin: auto;
+}
+
+.intro p:nth-child(3) {
+  font-weight: bold;
+  margin-top: 0;
+}
+
+span {
+  white-space: nowrap;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+aside a {
+  margin: 0.5rem;
+}
+
+.input {
+  position: relative;
+  width: 100vw;
+  height: 7.5rem;
+}
+
+.illustration {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(/images/elements/skullers.png);
+  width: 180px;
+  height: 230px;
+  top: 20%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+/* MEDIA */
+
+@media only screen and (min-width: 900px) {
+  .header-img {
+    background-image: url(/images/backgrounds/background-immortal.jpg);
+    height: 800px;
+  }
+
+  aside {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .iceberg-container {
+    position: relative;
+    width: 100vw;
+  }
+
+  .iceberg {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(/images/elements/ice-element.png);
+    width: 240px;
+    height: 200px;
+    z-index: 2;
+    position: absolute;
+    left: 64%;
+    bottom: -15rem;
+  }
+}

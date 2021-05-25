@@ -1,0 +1,344 @@
+body {
+  color: var(--white-color);
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  background: url(/images/mobile/background-pre-mobile-.jpg) no-repeat center
+    center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.header-img {
+  display: flex;
+  background-image: url(/images/mobile/immortal-mobile-new.jpg);
+  position: absolute;
+  width: 100%;
+  height: 808px;
+  background-repeat: no-repeat;
+  margin: auto;
+  position: absolute;
+  z-index: -1;
+  background-position: 50%;
+  background-size: cover;
+}
+
+.modal {
+  color: black;
+}
+
+/* INTRO & BUTTONS */
+
+.breadcrumbs,
+.info-text,
+.btn {
+  display: none;
+}
+
+.info-text {
+  line-height: 1.5;
+  text-align: center;
+}
+
+h1 {
+  padding-top: 3rem;
+  line-height: 1.2;
+  margin: 0;
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+.immortal {
+  color: #dc859c;
+}
+
+.group-buttons .button:first-child {
+  margin: 42rem auto 1rem;
+}
+
+.group-buttons .button:last-child {
+  margin: auto;
+}
+
+/* GAME INFO + TEXT */
+
+.game-info {
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin: 3rem;
+}
+
+.game-info h2,
+.info-text h2 {
+  color: var(--primary-color);
+  font-weight: normal;
+  font-size: 1.6rem;
+}
+
+/* PICTURES FROM GAME */
+
+.scenes figure {
+  display: flex;
+  margin: auto;
+  width: 330px;
+  height: 200px;
+}
+
+.scene1,
+.scene2,
+.scene3 {
+  width: 100%;
+  height: 100%;
+}
+
+figcaption {
+  width: 330px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 2rem;
+  padding: 30px 0;
+  background-color: rgba(255, 255, 255, 0.072);
+}
+
+/* GAME DETAILS / SYSTEM REQUIREMENTS */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 330px;
+  margin: auto;
+}
+
+.container h2 {
+  font-size: 1.2rem;
+  background-color: rgba(0, 0, 0, 0.771);
+  height: 3rem;
+  line-height: 2.6;
+  padding-left: 2rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+}
+
+table {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.648);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 2rem;
+}
+
+td {
+  color: var(--primary-color);
+  font-size: 0.9rem;
+  padding-left: 2.2rem;
+}
+
+th {
+  text-align: left;
+  font-size: 0.9rem;
+  padding-left: 2rem;
+}
+
+/* MEDIA 640px */
+
+@media only screen and (min-width: 640px) {
+  .header-img {
+    background-image: url(/images/backgrounds/immortal-medium-new.jpg);
+    margin-top: -10%;
+  }
+
+  /* INTRO */
+
+  .heading-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .breadcrumbs {
+    display: inline-flex;
+    list-style-type: none;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+  }
+
+  .breadcrumbs a {
+    color: var(--white-color);
+    text-decoration: none;
+  }
+
+  .breadcrumbs a:hover {
+    color: var(--primary-color);
+  }
+
+  .fas {
+    padding: 0 10px;
+  }
+
+  h1 {
+    font-size: 2.8rem;
+    text-align: left;
+    margin-left: 2rem;
+  }
+
+  .game-info {
+    max-width: 250px;
+    text-align: right;
+  }
+
+  .group-buttons .button:first-child {
+    margin: initial;
+    margin-bottom: 1rem;
+  }
+
+  .group-buttons .button:last-child {
+    margin: initial;
+  }
+
+  .group-buttons {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    text-align: left;
+  }
+
+  .btn {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+  }
+
+  /* PICTURES FROM GAME */
+
+  .scenes {
+    display: flex;
+    padding: 20px;
+    max-width: 700px;
+    margin: auto;
+  }
+
+  .img-from-game {
+    margin-top: 20rem;
+  }
+
+  figcaption {
+    height: 200px;
+    margin-bottom: 0;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 65px;
+    padding-right: 20px;
+  }
+
+  /* SELLING TEXT WIDE */
+
+  .buy {
+    position: relative;
+    width: 243px;
+    height: 325px;
+    margin: auto;
+    margin-top: 2rem;
+  }
+
+  .info-text {
+    display: block;
+    max-width: 700px;
+    margin: auto;
+    padding: 2rem;
+  }
+
+  .input-illustration {
+    position: absolute;
+    background-image: url(/images/elements/skullers.png);
+    width: 243px;
+    height: 325px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  /* GAME DETAILS / SYSTEM REQUIREMENTS */
+
+  .table-wrap {
+    display: flex;
+    padding: 20px;
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 5rem;
+  }
+
+  table {
+    height: 78%;
+  }
+
+  .container {
+    display: flex;
+    margin: 0;
+  }
+
+  .details {
+    padding-right: 10px;
+  }
+}
+
+/* MEDIA 1050px */
+
+@media only screen and (min-width: 1050px) {
+  .header-img {
+    background-image: url(/images/backgrounds/background-immortal.jpg);
+    height: 2000px;
+  }
+
+  h1 {
+    font-size: 4.4rem;
+    text-align: left;
+    margin-left: 2rem;
+  }
+
+  .group-buttons {
+    margin-top: 4rem;
+  }
+
+  .info-text {
+    text-align: left;
+    max-width: 280px;
+    margin-left: 2rem;
+    margin-top: -93rem;
+    padding: 0;
+  }
+
+  .info-text h2 {
+    padding-top: 2rem;
+  }
+
+  .img-from-game {
+    margin-top: -11rem;
+  }
+
+  .scenes {
+    display: block;
+    padding: 0;
+    max-width: 332px;
+    margin-right: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  figcaption {
+    height: auto;
+    text-align: center;
+    margin: auto;
+    padding: 30px 0;
+    background-color: rgba(255, 255, 255, 0.072);
+  }
+
+  .buy {
+    margin-top: 20rem;
+  }
+
+  .table-wrap {
+    margin-top: 54rem;
+  }
+}

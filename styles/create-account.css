@@ -1,0 +1,172 @@
+.background {
+  background-image: url(/images/backgrounds/register-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left 50% bottom 18%;
+  width: 100%;
+  color: var(--white-color);
+}
+
+.far {
+  color: rgb(252, 160, 39);
+}
+
+h1 {
+  padding: 3rem 0 0 0;
+  margin: 0;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.create-account-form {
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+  justify-content: center;
+  margin: 2rem auto 0 auto;
+}
+
+.include {
+  position: absolute;
+  top: 25px;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.label-wrap {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.fa-exclamation-triangle {
+  color: yellow;
+  font-size: 1rem;
+  padding-right: 10px;
+}
+
+.form-input {
+  display: block;
+  border-radius: 4px;
+  border-color: rgba(255, 255, 255, 0.404);
+  margin: auto;
+  width: 100%;
+  height: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.headline {
+  position: relative;
+  top: 45px;
+  font-size: 2rem;
+  margin: auto;
+}
+
+.fieldset-column {
+  margin-top: 55px;
+  line-height: 3;
+}
+
+.register {
+  background-color: var(--secondary-color-purple);
+  color: white;
+  border-style: none;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.button {
+  margin: 1.6rem auto 1rem auto;
+}
+
+.error {
+  display: none;
+}
+
+.error-button {
+  display: none;
+  font-size: 0.9rem;
+  color: rgb(221, 62, 62);
+  background-color: white;
+  border: rgb(221, 62, 62) solid 2px;
+  height: 32px;
+  line-height: 2;
+  margin-bottom: 1.4rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+#check-error {
+  position: absolute;
+  right: 0;
+}
+
+.agreement a {
+  color: var(--primary-color);
+  font-style: italic;
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+
+.privacy {
+  padding-left: 1.4rem;
+}
+
+.checkbox {
+  line-height: 1.5;
+  padding-top: 1rem;
+  text-align: left;
+  width: 100%;
+  font-size: 0.8rem;
+  position: relative;
+}
+
+button {
+  margin-top: 1.5rem;
+}
+
+.iceberg-container {
+  position: relative;
+  width: 100vw;
+}
+
+@media only screen and (min-width: 900px) {
+  .background {
+    height: 1100px;
+  }
+
+  .create-account-form {
+    flex-direction: row;
+    margin-top: 0;
+  }
+
+  .fieldset-column {
+    margin-top: 48px;
+  }
+
+  h1 {
+    margin-bottom: 1rem;
+  }
+
+  .headline {
+    top: 35px;
+  }
+
+  .register {
+    margin-bottom: 4rem;
+  }
+
+  .iceberg {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(/images/elements/ice-element.png);
+    width: 240px;
+    height: 200px;
+    z-index: 2;
+    position: absolute;
+    left: 69%;
+    bottom: -2rem;
+  }
+}

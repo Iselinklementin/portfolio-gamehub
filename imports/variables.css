@@ -1,0 +1,11 @@
+:root {
+  --primary-color: #fca01f;
+  --primary-color-btn-border: 1px solid #d7791e;
+  --primary-border: #fca01f solid 1px;
+  --secondary-color-blue: #1a8fc6;
+  --secondary-border-blue: #2f97c6;
+  --secondary-color-purple: #a5358b;
+  --secondary-border-purple: #a5358b solid 1px;
+  --white-color: #ffffff;
+  --black-color: #000000;
+}

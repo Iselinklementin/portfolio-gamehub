@@ -1,0 +1,163 @@
+.far {
+  color: rgb(252, 160, 39);
+}
+
+.background {
+  background-image: url(/images/backgrounds/register-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left 50% bottom 18%;
+  min-height: 900px;
+  width: 100%;
+  color: var(--white-color);
+  text-align: center;
+}
+
+h1,
+legend {
+  padding: 2rem 0 0.4rem 0;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: normal;
+  text-transform: initial;
+  margin: auto;
+}
+
+/* FORM LOGIN */
+
+.login-form {
+  padding-top: 1rem;
+  display: inline-block;
+  margin: auto;
+}
+
+fieldset {
+  border-style: none;
+  line-height: 2;
+  margin: auto;
+}
+
+.form-input {
+  display: block;
+  border-radius: 4px;
+  border-color: rgba(255, 255, 255, 0.404);
+  padding: 2px 30px;
+  margin: 0.5rem;
+  opacity: 80%;
+  width: 20rem;
+  height: 2rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.fa-exclamation-triangle {
+  color: rgb(221, 62, 62);
+  font-size: 1rem;
+  padding-right: 10px;
+}
+
+.error {
+  margin: 0 0.5rem;
+  display: none;
+  font-size: 0.9rem;
+  color: rgb(221, 62, 62);
+  background-color: white;
+  border: rgb(221, 62, 62) solid 2px;
+}
+
+.error-button {
+  display: none;
+  font-size: 0.9rem;
+  color: rgb(221, 62, 62);
+  background-color: white;
+  border: rgb(221, 62, 62) solid 2px;
+  height: 32px;
+  width: 320px;
+  line-height: 2;
+  margin: auto;
+  margin-bottom: 1.4rem;
+}
+
+#password-info {
+  line-height: 1.2;
+}
+
+.label {
+  margin-bottom: 1rem;
+}
+
+.link {
+  color: var(--primary-color);
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 0.8rem;
+  text-decoration: none;
+  display: block;
+}
+
+.button {
+  display: block;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+/* CREATE ACCOUNT */
+
+.new-customer {
+  display: inline-block;
+  margin: auto;
+  text-align: center;
+}
+
+.box {
+  background: var(--primary-color);
+  max-width: 340px;
+  height: 11rem;
+  margin: auto 0;
+  text-align: left;
+}
+
+.create {
+  width: 20rem;
+  margin-top: 1rem;
+}
+
+.box ul {
+  padding-top: 1rem;
+  color: var(--black-color);
+  line-height: 2;
+  list-style-type: initial;
+  margin-left: 2rem;
+}
+
+.dragon {
+  background-image: url(/images/elements/small-dragon.png);
+  height: 170px;
+  width: 170px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin: 2rem auto 0 auto;
+}
+
+/* MEDIA 650px */
+
+@media only screen and (min-width: 650px) {
+  .box {
+    width: 27rem;
+  }
+
+  .img-container {
+    position: relative;
+    height: 100px;
+    width: 460px;
+    margin: auto;
+    margin-top: -8rem;
+  }
+
+  .dragon {
+    position: absolute;
+    bottom: 33%;
+    right: -2rem;
+  }
+}

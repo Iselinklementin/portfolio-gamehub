@@ -1,0 +1,76 @@
+.background {
+  background-image: url(/images/backgrounds/404-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left 50% bottom 18%;
+  height: 700px;
+  width: 100%;
+  color: var(--white-color);
+  text-align: center;
+}
+
+h2 {
+  margin: 0;
+  padding: 0 20px;
+  font-size: 2.9rem;
+}
+
+h1 {
+  margin: 0;
+  padding: 5rem 2rem 1rem 2rem;
+  font-size: 1.3rem;
+  font-weight: normal;
+  text-transform: initial;
+}
+
+span {
+  white-space: nowrap;
+}
+
+.first {
+  color: var(--primary-color);
+}
+
+.illustration {
+  display: flex;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(/images/elements/gameover.svg);
+  width: 280px;
+  height: 180px;
+  margin: 3rem auto 1rem auto;
+}
+
+.back {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-style: italic;
+  padding-right: 2rem;
+  font-size: 1.2rem;
+}
+
+.start {
+  text-decoration: none;
+  color: #98cfe0;
+  font-style: italic;
+  padding-left: 2rem;
+  font-size: 1.2rem;
+}
+
+@media only screen and (min-width: 650px) {
+  .illustration {
+    display: flex;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(/images/elements/gameover.svg);
+    width: 480px;
+    height: 230px;
+    margin: 3rem auto;
+  }
+
+  h2 {
+    font-size: 3.2rem;
+  }
+}

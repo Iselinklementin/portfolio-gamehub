@@ -1,0 +1,311 @@
+main {
+  background-image: url(/images/backgrounds/background-general.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left 50% bottom 18%;
+  height: 1900px;
+  width: 100%;
+  color: var(--white-color);
+}
+
+.far {
+  color: rgb(252, 160, 39);
+}
+
+h1 {
+  width: 340px;
+  margin: auto;
+  margin-top: 0;
+  padding-top: 3rem;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+legend,
+h2 {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-transform: initial;
+  height: 2rem;
+  line-height: 1.5;
+  width: 320px;
+}
+
+.links-header {
+  display: flex;
+  margin: 0 3rem 0.6rem 3rem;
+  justify-content: end;
+}
+
+.log-out {
+  padding-left: 20px;
+}
+
+/* CUSTOMER INFO */
+
+.account-wrap {
+  background-color: rgba(10, 153, 205, 0.33);
+  padding: 1rem 0;
+  width: 340px;
+  margin: auto;
+}
+
+.form-input {
+  display: block;
+  border-radius: 4px;
+  border-color: rgba(255, 255, 255, 0.404);
+  padding: 2px 30px;
+  opacity: 80%;
+  text-align: center;
+  height: 30px;
+  margin: auto;
+  font-size: 1rem;
+}
+
+fieldset {
+  border-style: none;
+  line-height: 2;
+}
+
+legend {
+  margin: auto;
+}
+
+.account-wrap form {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+/* SALE SEARCH BOX */
+
+.sale {
+  display: flex;
+  background-color: var(--primary-color);
+  color: var(--black-color);
+  width: 340px;
+  margin: auto;
+  margin-top: 3rem;
+  align-content: center;
+}
+
+.sale h2 {
+  border-right: 1px white solid;
+  line-height: 3;
+  height: 60px;
+  width: 90px;
+  color: black;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  padding-left: 1.7rem;
+}
+
+#search-sell {
+  background-color: rgba(255, 255, 255, 0.57);
+  border: var(--primary-border);
+  border-radius: 8px;
+  height: 35px;
+  font-size: 1rem;
+  width: 190px;
+}
+
+#search-sell::placeholder {
+  font-size: 1rem;
+  font-family: inherit;
+  background-size: 15px;
+  color: var(--black-color);
+  text-align: center;
+}
+
+.group-link {
+  display: flex;
+  justify-content: space-between;
+  max-width: 340px;
+  margin: auto;
+  padding-top: 1rem;
+}
+
+ul.group-link {
+  padding: 0.8rem 0;
+  list-style: none;
+}
+
+/* SALE SEARCH BOX */
+
+.balance {
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+  background-color: rgba(28, 27, 27, 0.529);
+  height: 200px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+/* BALANCE */
+
+.balance p:first-child {
+  color: rgb(45, 191, 45);
+  font-size: 2.8rem;
+  padding-top: 3.5rem;
+  margin: 0 auto;
+  font-weight: bolder;
+}
+
+/* ORDERS AND REQUESTS */
+
+tr {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 330px;
+  padding: 8px 0;
+  border-top: white solid 1px;
+}
+
+.orders {
+  padding-bottom: 2rem;
+  border-bottom: var(--primary-border);
+}
+
+.orders,
+.purchases {
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+  margin: auto;
+}
+
+.orders h2,
+.purchases h2 {
+  text-align: left;
+}
+
+.purchases {
+  padding-top: 1.5rem;
+}
+
+.first {
+  border-top: hidden;
+}
+
+.purchases a {
+  padding-top: 0.8rem;
+}
+
+.link {
+  color: var(--primary-color);
+  font-style: italic;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+/* MEDIA */
+
+@media only screen and (min-width: 936px) {
+  main {
+    height: 1250px;
+  }
+
+  .grid {
+    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: auto;
+    grid-auto-rows: auto;
+    max-width: 800px;
+    margin: auto;
+  }
+
+  /* INTRO */
+
+  .heading {
+    grid-column-start: 1;
+    grid-column: span 3;
+    grid-row-start: 1;
+  }
+
+  h1 {
+    font-size: 2.8rem;
+    text-align: left;
+    margin-left: 2rem;
+    width: 340px;
+  }
+
+  .illustration {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(/images/elements/skullers.png);
+    width: 180px;
+    height: 230px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  /* CUSTOMER INFO */
+
+  .account-wrap {
+    grid-column-start: 1;
+    grid-column: span 2;
+    grid-row-start: 2;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(10, 153, 205, 0.33);
+    padding: 1rem 0;
+    width: 730px;
+    margin: auto;
+  }
+
+  /* SALE SEARCH BOX */
+
+  .sale-wrap {
+    grid-column-start: 1;
+    grid-row-start: 3;
+  }
+
+  .sale {
+    flex-direction: column;
+    height: 200px;
+    align-items: center;
+    margin: 3rem 1 0 0;
+  }
+
+  .sale h2 {
+    border-right: none;
+    border-bottom: white solid 1px;
+    height: 60px;
+    width: 70%;
+    color: black;
+    margin: 2rem 0 1rem 0;
+    padding-bottom: 0.6rem;
+  }
+
+  .search-container {
+    display: flex;
+    padding-left: 0;
+  }
+
+  #search-sell {
+    width: 235px;
+  }
+
+  /* BALANCE */
+
+  .balance {
+    grid-column-start: 1;
+    grid-row-start: 4;
+    margin-top: 2rem;
+  }
+
+  /* ORDERS AND REQUESTS */
+
+  .wrap-tables {
+    grid-column-start: 2;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    margin-top: 2rem;
+  }
+}

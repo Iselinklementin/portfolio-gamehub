@@ -1,0 +1,867 @@
+body,
+html {
+  color: white;
+  scroll-behavior: smooth;
+}
+
+html {
+  background: url(/images/backgrounds/home-background.jpg) no-repeat center
+    center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.header-img {
+  display: flex;
+  background: url(/images/mobile/heading-mobile.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 580px;
+  background-position: 50%;
+  margin-top: 0;
+  position: absolute;
+}
+
+h1 {
+  font-size: 1.4rem;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+h2 {
+  font-size: 3rem;
+  margin: 0;
+  text-align: center;
+}
+
+.intro {
+  position: relative;
+}
+
+.intro-text {
+  padding-top: 3rem;
+  text-align: center;
+}
+
+.section-intro {
+  max-width: 20rem;
+  margin: auto;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button,
+.purple {
+  margin-top: 2rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+/* IMAGE EFFECT */
+
+.games-java:hover,
+.overwatch:hover,
+.gallery-bottom:hover,
+.gamehover:hover {
+  filter: brightness(115%);
+}
+
+/* ICONS IN HEADER-IMAGE */
+
+.slogan {
+  max-width: 300px;
+  display: inline-flex;
+  padding: 0 0 1rem 0;
+  margin: 1.2rem 0 0 0;
+  justify-content: center;
+}
+
+.icons {
+  padding: 0;
+  margin: 1rem;
+}
+
+.slogan img {
+  height: 2rem;
+  margin: 0.5rem;
+}
+
+.sell-guide {
+  max-width: 600px;
+  margin: auto;
+  margin-top: 1rem;
+  padding: 1rem 0;
+}
+
+/* GALLERY ONE */
+
+.heading-overview {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 980px;
+  display: none;
+}
+
+.direct-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  cursor: pointer;
+  display: none;
+}
+
+.games-display-one {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 95%;
+  margin: auto;
+  justify-content: center;
+  margin-top: 6rem;
+}
+
+.gallery-top {
+  width: 150px;
+}
+
+#games-java-css {
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.game1,
+.game2,
+.game3,
+.game4 {
+  flex: 1;
+  padding: 5px;
+  margin: 12px;
+  max-width: 150px;
+  margin-top: 0;
+  cursor: pointer;
+}
+
+.text-wrapper {
+  text-align: center;
+  line-height: 1.4;
+  color: white;
+  text-decoration: none;
+}
+
+.game-name {
+  color: white;
+  text-decoration: none;
+}
+
+.price {
+  color: var(--primary-color);
+  height: 40px;
+  line-height: 2;
+}
+
+figcaption {
+  font-weight: 500;
+}
+
+.game-text,
+.price,
+.game-name,
+.support-display {
+  display: none;
+}
+
+/* TO SHOP */
+
+.browse-container {
+  background-color: rgba(13, 69, 118, 0.579);
+  display: flex;
+  width: 100%;
+  margin: auto;
+  cursor: pointer;
+  height: 340px;
+}
+
+.font-to-shop {
+  color: var(--color-white);
+  display: block;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  max-width: 20rem;
+}
+
+.to-shop {
+  margin: 1rem auto;
+  max-width: 90%;
+}
+
+.container-button {
+  position: relative;
+  width: 100%;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+}
+
+.browse {
+  position: absolute;
+  bottom: 70%;
+}
+
+.browse-wide {
+  display: none;
+}
+
+.photo-to-shop {
+  max-width: 16rem;
+}
+
+a.card,
+a.card:active,
+a.card:visited {
+  text-decoration: none;
+}
+
+/*  GALLERY TWO  */
+
+.games-display-two {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
+  margin-top: -1rem;
+}
+
+.display-releases {
+  margin: auto;
+}
+
+.release-game1 {
+  display: none;
+}
+
+.release-game1,
+.release-game2,
+.release-game3 {
+  padding: 5px;
+  margin: 12px;
+  margin-top: 0;
+  padding-top: 0;
+  cursor: pointer;
+  flex: 0;
+}
+
+h3 {
+  margin-top: 1rem;
+}
+
+.new-rel-wrap {
+  padding: 2px;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.game.text {
+  display: none;
+  padding: 2px;
+}
+
+.gallery-bottom {
+  width: 150px;
+  height: 205px;
+}
+
+.gallery-bottom:hover {
+  border: rgba(6, 5, 5, 0) solid thin;
+}
+
+.overwatch {
+  height: 205px;
+  max-width: 330px;
+}
+
+/* SUPPORT MOBILE */
+
+.support {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 95%;
+  margin: auto;
+  justify-content: center;
+  margin-top: -1rem;
+}
+
+.container {
+  width: 150px;
+  height: 205px;
+  background-color: rgba(0, 0, 0, 0.387);
+  padding: 5px;
+  margin: 12px;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.container:hover {
+  border: rgba(6, 5, 5, 0) solid thin;
+}
+
+.sell-buy {
+  margin-top: 2rem;
+  display: block;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 3;
+}
+
+.font {
+  display: block;
+  font-size: 1.7rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+/* SUPPORT SCREEN */
+
+.support-display {
+  position: relative;
+  display: block;
+  height: 520px;
+  margin-top: 3rem;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  display: none;
+}
+
+.support-img {
+  display: flex;
+  max-height: 520px;
+  max-width: 800px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  position: absolute;
+  padding-top: 3rem;
+  margin-left: 1rem;
+}
+
+.buttons h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.suprt-btn {
+  margin: 0;
+  margin-top: 1rem;
+  margin-bottom: 30px;
+}
+
+.support-sell {
+  position: relative;
+  height: 440px;
+  width: 800px;
+  margin: auto;
+  color: var(--primary-color);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+
+/* BETA */
+
+.span-beta {
+  display: none;
+}
+
+.openbeta-img {
+  display: flex;
+  max-width: 100%;
+  margin: auto;
+}
+.openbeta {
+  margin: auto;
+}
+
+.beta-btn {
+  display: none;
+}
+
+.access {
+  background-color: rgba(238, 153, 6, 0.654);
+  height: 55px;
+  font-size: 1.7rem;
+  line-height: 2;
+}
+
+/* ILLUSTRATION BOTTOM */
+
+.illustration {
+  display: flex;
+  width: 100%;
+  padding: 0;
+  object-fit: contain;
+}
+
+.bottom-to-shop,
+.btn {
+  display: none;
+}
+
+@media only screen and (min-width: 454px) {
+  .header-img {
+    height: 500px;
+    width: 100%;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .games-display-one {
+    max-width: 500px;
+  }
+
+  /*  TO SHOP  */
+
+  .font-to-shop {
+    max-width: 14rem;
+    margin-right: 1.5rem;
+    text-align: left;
+    padding-left: 30px;
+  }
+
+  .browse-container :nth-child(1) {
+    order: 2;
+  }
+
+  .browse-container {
+    margin-top: 1rem;
+  }
+
+  .to-shop {
+    display: flex;
+    margin: auto, 0;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+  }
+
+  .photo-to-shop {
+    max-width: 20rem;
+  }
+
+  .tracedphoto {
+    margin: 0;
+    padding: 0;
+  }
+
+  /*  GALLERY TWO  */
+
+  .release-game1 {
+    display: initial;
+  }
+
+  .gallery-bottom {
+    width: 210px;
+    height: 300px;
+  }
+
+  .overwatch {
+    height: 260px;
+    max-width: 500px;
+  }
+  .release-game2,
+  .release-game3 {
+    max-width: 300px;
+  }
+
+  /* SUPPORT MOBILE */
+
+  .container {
+    width: 210px;
+    height: 300px;
+  }
+
+  .sell-buy {
+    margin-top: 3.2rem;
+    display: block;
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 3;
+  }
+
+  .font {
+    font-size: 2.5rem;
+    line-height: 1;
+    max-width: 13rem;
+    margin: auto;
+  }
+
+  /* BETA */
+
+  .beta {
+    background-color: rgba(192, 201, 201, 0.36);
+    height: 350px;
+    display: flex;
+    margin-top: 2rem;
+  }
+
+  .openbeta {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  .openbeta-img {
+    display: block;
+    position: absolute;
+    max-width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .access {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+    right: 5%;
+    padding-top: 4rem;
+    font-size: 2.8rem;
+    text-align: right;
+    width: 300px;
+    height: 200px;
+    line-height: normal;
+    text-shadow: 3px 3px #0e1a267e;
+  }
+  .span-beta {
+    display: initial;
+  }
+}
+
+@media only screen and (min-width: 829px) {
+  .header-img {
+    background: url(/images/backgrounds/headerdragons.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 800px;
+    background-position: 50%;
+    position: absolute;
+    z-index: 0;
+  }
+
+  .section-intro {
+    max-width: 36rem;
+  }
+
+  .intro-text {
+    padding-top: 3rem;
+    text-align: center;
+    margin: auto;
+  }
+
+  .purple {
+    display: none;
+  }
+
+  .button-top,
+  .slogan {
+    margin-top: 5rem;
+  }
+
+  h1 {
+    margin-top: 4rem;
+  }
+
+  h2 {
+    font-size: 5.6rem;
+    line-height: 5.5rem;
+    margin: auto;
+  }
+
+  .container {
+    max-width: 90%;
+    margin: auto;
+  }
+
+  /* GALLERY ONE */
+
+  .display-one {
+    max-width: 800px;
+    margin: auto;
+    justify-content: space-between;
+  }
+
+  .heading-overview {
+    display: flex;
+    padding: 0 0.7rem;
+    margin-top: 12rem;
+  }
+
+  .game-text,
+  .direct-link,
+  .price,
+  .game-name {
+    display: initial;
+  }
+
+  .games-display-one {
+    max-width: 800px;
+    margin-top: 0;
+    text-align: left;
+  }
+
+  .gallery-top {
+    width: 180px;
+    height: 275px;
+  }
+
+  .game1,
+  .game2,
+  .game3,
+  .game4 {
+    flex: 0;
+    margin: 0.2rem;
+    max-width: 190px;
+  }
+
+  /*  TO SHOP  */
+
+  .browse {
+    display: none;
+  }
+
+  .browse-container {
+    background-color: rgba(13, 69, 118, 0);
+    margin-top: 4rem;
+  }
+
+  .container-button {
+    position: relative;
+    width: 100%;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+  }
+
+  .photo-to-shop {
+    max-width: 38rem;
+  }
+
+  .font-to-shop {
+    padding-left: 0;
+    margin: auto;
+    width: 180px;
+  }
+
+  .browse-shop {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .browse-wide {
+    display: initial;
+  }
+
+  /*  GALLERY TWO  */
+
+  .display-releases {
+    width: 800px;
+  }
+
+  .games-display-two {
+    margin-top: 0;
+    text-align: left;
+    max-width: 800px;
+  }
+
+  .release-game1,
+  .release-game2,
+  .release-game3 {
+    padding: 2px;
+    margin: 0.2rem;
+  }
+
+  .gallery-bottom {
+    width: 210px;
+    height: 270px;
+    margin: 0.1rem;
+    padding: 0;
+  }
+
+  .overwatch {
+    height: 270px;
+    width: 335px;
+    padding: 0;
+    margin: 0.1rem;
+  }
+
+  .release {
+    margin: 2rem 1rem;
+    padding: 0 0rem;
+  }
+
+  /* SUPPORT  */
+
+  .support {
+    display: none;
+  }
+
+  .support-display {
+    display: block;
+  }
+
+  /* BETA */
+
+  .beta {
+    background-color: rgba(192, 201, 201, 0);
+    position: relative;
+    width: 800px;
+    margin: 1rem auto 3rem auto;
+    padding-top: 10rem;
+  }
+
+  .beta-btn-container {
+    display: flex;
+    position: absolute;
+    height: 100px;
+    right: 3%;
+    bottom: 15%;
+    margin: auto;
+  }
+
+  .openbeta {
+    position: absolute;
+  }
+
+  .beta-btn {
+    display: initial;
+  }
+
+  .openbeta-img {
+    max-width: 800px;
+    height: 460px;
+  }
+
+  .access {
+    text-align: right;
+    line-height: 1.5;
+    height: 300px;
+    margin-top: -10rem;
+    padding-top: 0;
+  }
+
+  .span-beta {
+    display: initial;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .header-img {
+    background: url(/images/backgrounds/heading-bigsize.jpg);
+    background-position: 50%;
+    width: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .heading-overview {
+    max-width: 1200px;
+  }
+
+  /* GALLERY ONE */
+
+  .display-one {
+    max-width: 1000px;
+  }
+
+  .games-display-one {
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
+
+  .heading-overview {
+    max-width: 920px;
+  }
+
+  .gallery-top {
+    width: 200px;
+  }
+
+  .game1,
+  .game2,
+  .game3,
+  .game4 {
+    padding: 5px;
+    margin: 12px;
+  }
+
+  /* TO SHOP */
+
+  .font-to-shop {
+    text-align: center;
+    margin-right: 2rem;
+    width: 240px;
+  }
+
+  /*  GALLERY TWO  */
+
+  .display-releases {
+    width: 920px;
+  }
+
+  .games-display-two {
+    max-width: 1000px;
+  }
+
+  .overwatch {
+    width: 410px;
+  }
+
+  .release-game1,
+  .release-game2,
+  .release-game3 {
+    padding: 5px;
+    margin: 8px;
+  }
+
+  /* SUPPORT */
+
+  .support-img {
+    max-width: 920px;
+  }
+
+  .support-sell {
+    width: 910px;
+  }
+
+  /* BETA */
+
+  .beta {
+    width: 920px;
+    margin-top: 7rem;
+  }
+
+  .openbeta-img {
+    max-width: 920px;
+    height: 500px;
+  }
+}
