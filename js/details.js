@@ -121,6 +121,7 @@ function introHeading(result) {
 // MODAL - BUTTONS - CHANGE ON ADD //
 
 const modal = document.querySelector(".modal");
+// const idBtn = document.querySelector(".btn");
 const openModal = document.querySelectorAll("[data-open]");
 const closeModal = document.querySelectorAll("[data-close]");
 
@@ -140,29 +141,6 @@ detailBtns.forEach(btn => {
         btn.style.color = "white";
     })
 });
-  
-let count = 0;
-  
-for (let i = 0; i < closeModal.length; i++) {
-    closeModal[i].addEventListener("click", function() {
-        modal.style.display = "none";
-        
-        setInterval(function() {
-          count++;
-  
-          if(count === 2) {
-            clearInterval();
-  
-            detailBtns.forEach(btn => {
-              btn.innerText = "Add to cart";
-              btn.style.backgroundColor = "orange";
-              btn.style.color = "black";
-              btn.style.border = "var(--primary-color-btn-border)";
-            })
-          }
-        },1000);
-    });
-};
   
 window.onclick = function(event) {
     if (event.target === modal) {
@@ -207,4 +185,27 @@ function gameInCart (result) {
                             <p><strong>Platform:</strong> ${gamePlatform}</p>`
                             break;
     }
+};
+
+let count = 0;
+  
+for (let i = 0; i < closeModal.length; i++) {
+    closeModal[i].addEventListener("click", function() {
+        modal.style.display = "none";
+        
+        setInterval(function() {
+          count++;
+  
+          if(count === 2) {
+            clearInterval();
+  
+            detailBtns.forEach(btn => {
+              btn.innerText = "Add to cart";
+              btn.style.backgroundColor = "orange";
+              btn.style.color = "black";
+              btn.style.border = "var(--primary-color-btn-border)";
+            })
+          }
+        },1000);
+    });
 };
