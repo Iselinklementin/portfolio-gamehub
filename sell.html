@@ -1,132 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Put your games up for sale! Earn money, buy cheap!">
-    <meta name="keywords" content="games, sell games, online shop, online games, mmorpg, mmo, box, xbox, ps, pc, nintendo">
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@0,400;0,900;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link href="styles/styles.css" rel="stylesheet" />
-    <link href="styles/sell.css" rel="stylesheet" />
-    <script src="https://kit.fontawesome.com/9b8ac118a8.js" crossorigin="anonymous"></script>
 
-    <title>Sell your game</title>
-  </head>
-  <body>
-    <header>
-            
-      <ul class="skip-links">
-        <li><a href="#main">Skip to the main content</a></li>  
-      </ul>
-     
-      <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars"></i></label>
-      <input type="checkbox" id="hamburger-menu" />
-      <div class="nav-logo-center">
-        <a href="index.html"><img class="logo" src="/images/icons/logo.svg" alt="Gamehub logo"/></a>
-      </div>
-      <div class="shoppingcart-wrap">
-          <a href="shopping-cart.html"><img class="shoppingcart-icon" src="/images/icons/shoppingcart.svg" alt="Icon of shopping cart"/></a>
-      </div>
-      
-      <nav>
-        <section class="wrap">
-          <div class="nav-left-container">
-            <section class="nav-li-contain">
-              <a href="index.html">Home</a>
-              <a href="shop.html">Shop</a>
-              <a href="sell.html" class="active" aria-current="page">Sell</a>
-            </section>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Put your games up for sale! Earn money, buy cheap!">
+  <meta name="keywords"
+    content="games, sell games, online shop, online games, mmorpg, mmo, box, xbox, ps, pc, nintendo">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@0,400;0,900;1,400;1,700&display=swap"
+    rel="stylesheet" />
+  <link href="styles/styles.css" rel="stylesheet" />
+  <link href="styles/sell.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/9b8ac118a8.js" crossorigin="anonymous"></script>
 
-          <div class="nav-right-container">
-            <section class="nav-li-contain">
-              <div class="search-bar">
-                <form id="search">
-                  <input type="search" placeholder="Search" aria-label="Search through site">
-                </form>
+  <title>Sell your game</title>
+</head>
+
+<body>
+  <header>
+
+    <ul class="skip-links">
+      <li><a href="#main">Skip to the main content</a></li>
+    </ul>
+
+    <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars"></i></label>
+    <input type="checkbox" id="hamburger-menu" />
+    <div class="nav-logo-center">
+      <a href="index.html"><img class="logo" src="/images/icons/logo.svg" alt="Gamehub logo" /></a>
+    </div>
+    <div class="shoppingcart-wrap">
+      <a href="shopping-cart.html"><img class="shoppingcart-icon" src="/images/icons/shoppingcart.svg"
+          alt="Icon of shopping cart" /></a>
+    </div>
+
+    <nav>
+      <section class="wrap">
+        <div class="nav-left-container">
+          <section class="nav-li-contain">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="sell.html" class="active" aria-current="page">Sell</a>
+          </section>
+        </div>
+
+        <div class="nav-right-container">
+          <section class="nav-li-contain">
+            <div class="search-bar">
+              <form id="search">
+                <input type="search" placeholder="Search" aria-label="Search through site">
+              </form>
             </div>
-              <a href="#" class="search-icon"><i class="fas fa-search"></i></a>
-              <a href="login.html" class="login"><i class="far fa-user"></i><span class="login-text">Log in</span></a>
-            </section>
-            <a href="shopping-cart.html" class="shop-text">Shopping cart</a>
-          </div>
-        </section>
-      </nav>
+            <a href="#" class="search-icon"><i class="fas fa-search"></i></a>
+            <a href="login.html" class="login"><i class="far fa-user"></i><span class="login-text">Log in</span></a>
+          </section>
+          <a href="shopping-cart.html" class="shop-text">Shopping cart</a>
+        </div>
+      </section>
+    </nav>
   </header>
 
   <section class="header-search">
     <form id="search search-mobile">
       <input id="search-input" type="search" placeholder="Search" aria-label="Search through site">
     </form>
-</section> 
+  </section>
 
   <main id="main">
 
     <!-- SLOGAN -->
 
     <div class="container">
-        <div class="border">
-          <section class="slogan">
-            <figure class="icons">
-              <img src="/images/icons/list.svg" alt="Icon - Set your price">
-              <figcaption>List it</figcaption>
-            </figure>
-    
-            <figure class="icons">
-              <img src="/images/icons/send.svg" alt="Icon - Send your game">
-              <figcaption>Send it</figcaption>
-            </figure>
-    
-            <figure class="icons">
-              <img src="/images/icons/paid-icon.svg" alt="Icon - Get paid">
-              <figcaption>Get paid</figcaption>
+      <div class="border">
+        <section class="slogan">
+          <figure class="icons">
+            <img src="/images/icons/list.svg" alt="Icon - Set your price">
+            <figcaption>List it</figcaption>
           </figure>
-          </section>
-        
-    <!-- SELL TEXT  -->
 
-          <section class="sell-guide">
+          <figure class="icons">
+            <img src="/images/icons/send.svg" alt="Icon - Send your game">
+            <figcaption>Send it</figcaption>
+          </figure>
+
+          <figure class="icons">
+            <img src="/images/icons/paid-icon.svg" alt="Icon - Get paid">
+            <figcaption>Get paid</figcaption>
+          </figure>
+        </section>
+
+        <!-- SELL TEXT  -->
+
+        <section class="sell-guide">
           <h1>Sell your game</h1>
           <h2>Just search for the right one</h2>
         </section>
-        </div>
       </div>
+    </div>
 
-      <!-- SEARCH SECTION  -->
-      
-          <section class="search-section">
-            <h2>Search for the right game and platform</h2>
-            <form class="sell-searchbar"><input id="search-sell" type="search" placeholder="Search" aria-label="Search for games" /></form>
-          </section>
+    <!-- SEARCH SECTION  -->
+
+    <section class="search-section">
+      <h2>Search for the right game and platform</h2>
+      <form class="sell-searchbar"><input id="search-sell" type="search" placeholder="Search"
+          aria-label="Search for games" /></form>
+    </section>
   </main>
 
   <footer>
-    <img class="footer-logo" src="/images/icons/logo.svg" alt="Gamehub logo"/>
+    <img class="footer-logo" src="/images/icons/logo.svg" alt="Gamehub logo" />
     <ul>
       <div class="li-wrap">
-      <section>
-        <li><a href="login.html">Log in</a></li>
-        <li><a href="sell.html">Sell</a></li>
-        <li><a href="create-account.html">Create account</a></li>
-      </section>
-      
-      <section>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="404.html">FAQ</a></li>
-        <li><a href="404.html">Safe payment</a></li>
-      </section>
-    </div>
+        <section>
+          <li><a href="login.html">Log in</a></li>
+          <li><a href="sell.html">Sell</a></li>
+          <li><a href="create-account.html">Create account</a></li>
+        </section>
 
-    <figure>
-      <a href="404.html"><i class="fab fa-facebook"></i></a>
-      <a href="404.html"><i class="fab fa-twitter"></i></a>
-      <a href="404.html"><i class="fab fa-instagram"></i></a>
-    </figure>
-   
+        <section>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="404.html">FAQ</a></li>
+          <li><a href="404.html">Safe payment</a></li>
+        </section>
+      </div>
+
+      <figure>
+        <a href="404.html"><i class="fab fa-facebook"></i></a>
+        <a href="404.html"><i class="fab fa-twitter"></i></a>
+        <a href="404.html"><i class="fab fa-instagram"></i></a>
+      </figure>
+
     </ul>
   </footer>
-  </body>
+</body>
+
 </html>

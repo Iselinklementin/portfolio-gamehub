@@ -1,195 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Feel free to contact us if you have any questions. Find our contact information here!">
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@0,400;0,900;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link href="styles/styles.css" rel="stylesheet" />
-    <link href="styles/contact.css" rel="stylesheet" />
-    <script src="https://kit.fontawesome.com/9b8ac118a8.js" crossorigin="anonymous"></script>
 
-    <title>Contact</title>
-  </head>
-  <body>
-    <header>
-            
-      <ul class="skip-links">
-        <li><a href="#main">Skip to the main content</a></li>  
-      </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Feel free to contact us if you have any questions. Find our contact information here!">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@0,400;0,900;1,400;1,700&display=swap"
+    rel="stylesheet" />
+  <link href="styles/styles.css" rel="stylesheet" />
+  <link href="styles/contact.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/9b8ac118a8.js" crossorigin="anonymous"></script>
 
-      <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars"></i></label>
-      <input type="checkbox" id="hamburger-menu" />
-      <div class="nav-logo-center">
-        <a href="index.html"><img class="logo" src="/images/icons/logo.svg" alt="Gamehub logo"/></a>
-      </div>
-      <div class="shoppingcart-wrap">
-          <a href="shopping-cart.html"><img class="shoppingcart-icon" src="/images/icons/shoppingcart.svg" alt="Icon of shopping cart"/></a>
-      </div>
-      
-      <nav>
-        <section class="wrap">
-          <div class="nav-left-container">
-            <section class="nav-li-contain">
-              <a href="index.html">Home</a>
-              <a href="shop.html">Shop</a>
-              <a href="sell.html">Sell</a>
-            </section>
-          </div>
+  <title>Contact</title>
+</head>
 
-          <div class="nav-right-container">
-            <section class="nav-li-contain">
-              <div class="search-bar">
-                <form id="search">
-                  <input type="search" placeholder="Search" aria-label="Search through site">
-                </form>
+<body>
+  <header>
+
+    <ul class="skip-links">
+      <li><a href="#main">Skip to the main content</a></li>
+    </ul>
+
+    <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars"></i></label>
+    <input type="checkbox" id="hamburger-menu" />
+    <div class="nav-logo-center">
+      <a href="index.html"><img class="logo" src="/images/icons/logo.svg" alt="Gamehub logo" /></a>
+    </div>
+    <div class="shoppingcart-wrap">
+      <a href="shopping-cart.html"><img class="shoppingcart-icon" src="/images/icons/shoppingcart.svg"
+          alt="Icon of shopping cart" /></a>
+    </div>
+
+    <nav>
+      <section class="wrap">
+        <div class="nav-left-container">
+          <section class="nav-li-contain">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="sell.html">Sell</a>
+          </section>
+        </div>
+
+        <div class="nav-right-container">
+          <section class="nav-li-contain">
+            <div class="search-bar">
+              <form id="search">
+                <input type="search" placeholder="Search" aria-label="Search through site">
+              </form>
             </div>
-              <a href="#" class="search-icon"><i class="fas fa-search"></i></a>
-              <a href="login.html" class="login"><i class="far fa-user"></i><span class="login-text">Log in</span></a>
-            </section>
-            <a href="shopping-cart.html" class="shop-text">Shopping cart</a>
-          </div>
-        </section>
-      </nav>
-    </header>
-
-    <section class="header-search">
-      <form id="search search-mobile">
-        <input id="search-input" type="search" placeholder="Search" aria-label="Search through site">
-      </form>
-  </section> 
-  
-    <main id="main">
-
-      <figure class="contact-icon"></figure>
-      <h1>Contact us</h1>
-
-      <form class="contact-form">
-        <div class="message"></div>
-        <label class="label">
-          <div class="labelwrap">
-            Name (Required) <div class="error" id="nameError"><i class="fas fa-exclamation-triangle"></i></div></div>
-            <input type="text" class="fullName form-input">
-        </label>
-        <label class="label">
-          <div class="labelwrap">
-            Subject (min. 10 characters)
-            <div class="error" id="subjectError"><i class="fas fa-exclamation-triangle"></i></div></div>
-            <input type="text" class="subject form-input">
-        </label>
-        <label class="label">
-          <div class="labelwrap">
-            Email (Required)
-            <div class="error" id="emailError"><i class="fas fa-exclamation-triangle"></i></div></div>
-        <input type="email" name="" class="email form-input">
-        </label>
-        <label class="label">
-          <div class="labelwrap">
-            Address (min. 20 characters)
-            <div class="error" id="addressError"><i class="fas fa-exclamation-triangle"></i></div></div>
-        <textarea type="text" class="address address-input form-input"></textarea>
-        </label class="label">
-        <div class="error-button error"><i class="fas fa-exclamation-triangle"></i>Please fill out required fields</div>
-        <a class="button" disabled>Submit</a>
-        <p class="info">You need to fill out the form before submitting</p>
-    </form>
-
-      <!-- CUSTOMER SUPPORT -->
-
-      <section class="contact">
-        <div class="customer-support">
-          <h2>Customer support</h2>
-          <table>
-            <tr>
-              <th>Email</th>
-              <td>Lorem@gamehub.com</td>
-            </tr>
-            <tr>
-              <th>Phone</th>
-              <td>+47 913 09 271</td>
-            </tr>
-            <tr>
-              <th>Address</th>
-              <td>Lorem ipsum, PB 3291</td>
-            </tr>
-            <tr>
-              <th>Web</th>
-              <td>www.loremipsum.com</td>
-            </tr>
-          </table>
-        </div>
-
-        <!-- PRESS MEDIA -->
-
-        <div class="press-media">
-          <h2>Press and Media</h2>
-          <table>
-            <tr>
-              <th>Email</th>
-              <td>Lorem@gamehub.com</td>
-            </tr>
-            <tr>
-              <th>Phone</th>
-              <td>+47 913 09 271</td>
-            </tr>
-            <tr>
-              <th>Address</th>
-              <td>Lorem ipsum, PB 3291</td>
-            </tr>
-            <tr>
-              <th>Web</th>
-              <td>www.loremipsum.com</td>
-            </tr>
-          </table>
-        </div>
-
-        <!-- ONLINE -->
-
-        <div class="online">
-          <h2>Online</h2>
-          <table>
-            <tr>
-              <th>Email</th>
-              <td>Lorem@gamehub.com</td>
-            </tr>
-            <tr>
-              <th>Phone</th>
-              <td>+47 913 09 271</td>
-            </tr>
-            <tr>
-              <th>Address</th>
-              <td>Lorem ipsum, PB 3291</td>
-            </tr>
-            <tr>
-              <th>Web</th>
-              <td>www.loremipsum.com</td>
-            </tr>
-          </table>
+            <a href="#" class="search-icon"><i class="fas fa-search"></i></a>
+            <a href="login.html" class="login"><i class="far fa-user"></i><span class="login-text">Log in</span></a>
+          </section>
+          <a href="shopping-cart.html" class="shop-text">Shopping cart</a>
         </div>
       </section>
+    </nav>
+  </header>
 
-        <!-- SOCIAL MEDIA -->
+  <section class="header-search">
+    <form id="search search-mobile">
+      <input id="search-input" type="search" placeholder="Search" aria-label="Search through site">
+    </form>
+  </section>
 
-      <figure class="some-contact">
-        <i class="fab fa-facebook"></i>
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-instagram"></i>
-      </figure>
+  <main id="main">
 
-    </main>
-    <footer>
-      <img class="footer-logo" src="/images/icons/logo.svg" alt="Gamehub logo"/>
-      <ul>
-        <div class="li-wrap">
+    <figure class="contact-icon"></figure>
+    <h1>Contact us</h1>
+
+    <form class="contact-form">
+      <div class="message"></div>
+      <label class="label">
+        <div class="labelwrap">
+          Name (Required) <div class="error" id="nameError"><i class="fas fa-exclamation-triangle"></i></div>
+        </div>
+        <input type="text" class="fullName form-input">
+      </label>
+      <label class="label">
+        <div class="labelwrap">
+          Subject (min. 10 characters)
+          <div class="error" id="subjectError"><i class="fas fa-exclamation-triangle"></i></div>
+        </div>
+        <input type="text" class="subject form-input">
+      </label>
+      <label class="label">
+        <div class="labelwrap">
+          Email (Required)
+          <div class="error" id="emailError"><i class="fas fa-exclamation-triangle"></i></div>
+        </div>
+        <input type="email" name="" class="email form-input">
+      </label>
+      <label class="label">
+        <div class="labelwrap">
+          Address (min. 20 characters)
+          <div class="error" id="addressError"><i class="fas fa-exclamation-triangle"></i></div>
+        </div>
+        <textarea type="text" class="address address-input form-input"></textarea>
+      </label class="label">
+      <div class="error-button error"><i class="fas fa-exclamation-triangle"></i>Please fill out required fields</div>
+      <a class="button" disabled>Submit</a>
+      <p class="info">You need to fill out the form before submitting</p>
+    </form>
+
+    <!-- CUSTOMER SUPPORT -->
+
+    <section class="contact">
+      <div class="customer-support">
+        <h2>Customer support</h2>
+        <table>
+          <tr>
+            <th>Email</th>
+            <td>Lorem@gamehub.com</td>
+          </tr>
+          <tr>
+            <th>Phone</th>
+            <td>+47 913 09 271</td>
+          </tr>
+          <tr>
+            <th>Address</th>
+            <td>Lorem ipsum, PB 3291</td>
+          </tr>
+          <tr>
+            <th>Web</th>
+            <td>www.loremipsum.com</td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- PRESS MEDIA -->
+
+      <div class="press-media">
+        <h2>Press and Media</h2>
+        <table>
+          <tr>
+            <th>Email</th>
+            <td>Lorem@gamehub.com</td>
+          </tr>
+          <tr>
+            <th>Phone</th>
+            <td>+47 913 09 271</td>
+          </tr>
+          <tr>
+            <th>Address</th>
+            <td>Lorem ipsum, PB 3291</td>
+          </tr>
+          <tr>
+            <th>Web</th>
+            <td>www.loremipsum.com</td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- ONLINE -->
+
+      <div class="online">
+        <h2>Online</h2>
+        <table>
+          <tr>
+            <th>Email</th>
+            <td>Lorem@gamehub.com</td>
+          </tr>
+          <tr>
+            <th>Phone</th>
+            <td>+47 913 09 271</td>
+          </tr>
+          <tr>
+            <th>Address</th>
+            <td>Lorem ipsum, PB 3291</td>
+          </tr>
+          <tr>
+            <th>Web</th>
+            <td>www.loremipsum.com</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <!-- SOCIAL MEDIA -->
+
+    <figure class="some-contact">
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-instagram"></i>
+    </figure>
+
+  </main>
+  <footer>
+    <img class="footer-logo" src="/images/icons/logo.svg" alt="Gamehub logo" />
+    <ul>
+      <div class="li-wrap">
         <section>
           <li><a href="login.html">Log in</a></li>
           <li><a href="sell.html">Sell</a></li>
           <li><a href="create-account.html">Create account</a></li>
         </section>
-        
+
         <section>
           <li><a href="contact.html">Contact</a></li>
           <li><a href="404.html">FAQ</a></li>
@@ -202,9 +209,10 @@
         <a href="404.html"><i class="fab fa-twitter"></i></a>
         <a href="404.html"><i class="fab fa-instagram"></i></a>
       </figure>
-     
-      </ul>
-    </footer>
-    <script src="/js/contact.js"></script>
-  </body>
+
+    </ul>
+  </footer>
+  <script src="/js/contact.js"></script>
+</body>
+
 </html>

@@ -49,6 +49,8 @@ function detailedInfo(result) {
 const image = document.querySelector(".img-header");
 const genre = document.querySelector(".genre");
 
+// GENRE
+
 function imgSection(result) {
     const imagelist = result.images
     imagelist.forEach(img => {
@@ -58,9 +60,10 @@ function imgSection(result) {
     let category = result.categories;
     for (let i = 0; i < category.length; i++) {
         const genresName = category[i];
-        genre.innerHTML += `<li>${genresName.name}</li>`;
+        console.log(genresName)
+        genre.innerHTML += `<p>${genresName.name}</p>`;
     };
-    reviews.innerHTML += `<p>Number of reviews: ${result.review_count}</p>`
+    reviews.innerHTML += `<span>Number of reviews:</span> ${result.review_count}`
 };
 
 
@@ -70,7 +73,7 @@ const price = document.querySelector(".pricetag");
 
 function introHeading(result) {
     price.innerHTML = `${result.prices.price},-` 
-    paraIntro.innerHTML += `<p>${result.description}</p>`;
+    paraIntro.innerHTML += `${result.description}`;
 
     const platform = result.tags;
 
