@@ -5,8 +5,7 @@ html {
 }
 
 html {
-  background: url(/images/backgrounds/home-background.jpg) no-repeat center
-    center;
+  background: url(/images/backgrounds/home-background.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -239,6 +238,7 @@ a.card:visited {
   margin: auto;
   justify-content: center;
   margin-top: -1rem;
+  max-width: 500px;
 }
 
 .display-releases {
@@ -396,6 +396,7 @@ h3 {
   max-width: 100%;
   margin: auto;
 }
+
 .openbeta {
   margin: auto;
 }
@@ -437,9 +438,9 @@ h3 {
     justify-content: center;
   }
 
-  .games-display-one {
+  /* .games-display-one {
     max-width: 500px;
-  }
+  } */
 
   /*  TO SHOP  */
 
@@ -490,6 +491,7 @@ h3 {
     height: 260px;
     max-width: 500px;
   }
+
   .release-game2,
   .release-game3 {
     max-width: 300px;
@@ -553,6 +555,7 @@ h3 {
     line-height: normal;
     text-shadow: 3px 3px #0e1a267e;
   }
+
   .span-beta {
     display: initial;
   }

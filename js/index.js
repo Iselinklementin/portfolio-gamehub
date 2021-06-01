@@ -43,5 +43,3 @@ window.onload = () => {
         main.style.display = "block";
     }, 1900)
 };
-
-const search = document.querySelector(".fa-search");
