@@ -71,3 +71,14 @@ for (let i = 0; i < closeModal.length; i++) {
   function displayError (message = "Ops! Something went wrong.") {
     return `<div class="error">${message}</div>`;
 };
+
+const searchfield = document.querySelector(".search-icon");
+const searchbar = document.querySelector(".header-search");
+const searchDesktop = document.querySelector(".search-bar");
+
+searchfield.onclick = () => {
+  searchbar.classList.toggle("header-show");
+}
+
+// if (window.innerWidth <= 1100) {
+// }

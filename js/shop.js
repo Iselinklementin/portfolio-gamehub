@@ -222,3 +222,15 @@ function filterPlatform(result) {
     }}
   }
 };
+
+const loader = document.querySelector(".loading");
+const main = document.querySelector("main");
+
+main.style.display = "none";
+
+window.onload = () => {
+    window.setInterval(function () {
+        loader.style.display = "none";
+        main.style.display = "block";
+    },1900)
+};

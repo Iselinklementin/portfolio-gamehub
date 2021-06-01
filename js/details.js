@@ -2,7 +2,7 @@ const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
 const url = "https://grafs.no/wp-json/wc/store/products/" + id;
-const loader = document.querySelector(".loader");
+// const loader = document.querySelector(".loader");
 const container = document.querySelector(".container");
 const detailBtns = document.querySelectorAll(".detail-btn");
 
@@ -10,19 +10,18 @@ async function fetchGame() {
     try {
         const response = await fetch(url);
         const result = await response.json();
-        
-        loader.remove();
+
+        // loader.remove();
         detailedInfo(result);
         introHeading(result);
-        imgSection(result);            
+        imgSection(result);
         gameInCart(result);
 
     } catch {
-        loader.remove();
+        // loader.remove();
         container.classList.add("container-error");
         container.innerHTML = displayFailed();
-    } finally {
-    }
+    } finally {}
 };
 
 fetchGame();
@@ -38,8 +37,8 @@ const reviews = document.querySelector(".reviews");
 
 function detailedInfo(result) {
 
-    if(result.name)
-    gameName = result.name;
+    if (result.name)
+        gameName = result.name;
     const nameCapitalized = gameName.charAt(0).toUpperCase() + gameName.slice(1)
     title.innerText = `${nameCapitalized}`;
     breadcrumbs.innerHTML = `<strong>${nameCapitalized}</strong>`;
@@ -52,15 +51,23 @@ const genre = document.querySelector(".genre");
 // GENRE
 
 function imgSection(result) {
-    const imagelist = result.images
-    imagelist.forEach(img => {
-        image.src = `${img.src}`
-});
+    const imagelist = result.images;
+    const imageSub = document.querySelector(".img-sub");
+    // console.log(imagelist)
+
+    for (let i = 0; i < imagelist.length; i++) {
+        image.src = imagelist[0].src;
+        imageSub.src = imagelist[1].src;
+
+    }
+    // imagelist.forEach(img => {
+    //     image.src = `${img.src}`
+    //     // console.log(img[0])
+    // });
 
     let category = result.categories;
     for (let i = 0; i < category.length; i++) {
         const genresName = category[i];
-        console.log(genresName)
         genre.innerHTML += `<p>${genresName.name}</p>`;
     };
     reviews.innerHTML += `<span>Number of reviews:</span> ${result.review_count}`
@@ -72,7 +79,7 @@ const platforms = document.querySelector(".platform");
 const price = document.querySelector(".pricetag");
 
 function introHeading(result) {
-    price.innerHTML = `${result.prices.price},-` 
+    price.innerHTML = `${result.prices.price},-`
     paraIntro.innerHTML += `${result.description}`;
 
     const platform = result.tags;
@@ -83,7 +90,7 @@ function introHeading(result) {
         if (gamePlatform === "PC") {
             platforms.innerHTML += `<p class="hidePlat">${gamePlatform}</p><img src="/images/icons/platform/windows.svg" alt="Picture of Windows-logo" class="plat-logo">`;
         }
-        
+
         if (gamePlatform === "PlayStation 4") {
             platforms.innerHTML += `<p class="hidePlat">${gamePlatform}</p><img src="/images/icons/platform/ps.svg" alt="Picture of PlayStation-logo" class="plat-logo ps4">`;
         }
@@ -107,7 +114,7 @@ function introHeading(result) {
         if (gamePlatform === "Linux") {
             platforms.innerHTML += `<p class="hidePlat">${gamePlatform}</p><img src="/images/icons/platform/linux.svg" alt="Picture of Linux-logo" class="plat-logo">`;
         }
-        
+
         if (gamePlatform === "PS Vita") {
             platforms.innerHTML += `<p class="hidePlat">${gamePlatform}</p><img src="/images/icons/platform/vita.svg" alt="Picture of PS Vita-logo" class="plat-logo vita">`;
         }
@@ -125,11 +132,11 @@ const modal = document.querySelector(".modal");
 const openModal = document.querySelectorAll("[data-open]");
 const closeModal = document.querySelectorAll("[data-close]");
 
-for(let i = 0; i < openModal.length; i++) {
-    openModal[i].addEventListener("click", function() {
-      modal.style.display = "flex";
+for (let i = 0; i < openModal.length; i++) {
+    openModal[i].addEventListener("click", function () {
+        modal.style.display = "flex";
     });
-  };
+};
 
 // ADDED TO CART BUTTONS //
 
@@ -141,34 +148,34 @@ detailBtns.forEach(btn => {
         btn.style.color = "white";
     })
 });
-  
-window.onclick = function(event) {
+
+window.onclick = function (event) {
     if (event.target === modal) {
-          modal.style.display = "none";
-  
-          setInterval(function() {
-          count++;
-  
-          if(count === 2) {
-            clearInterval();
-  
-            detailBtns.forEach(btn => {
-              btn.innerText = "Add to cart";
-              btn.style.backgroundColor = "orange";
-              btn.style.color = "black";
-              btn.style.border = "var(--primary-color-btn-border)";
-            })
-          }
-        },1000);
+        modal.style.display = "none";
+
+        setInterval(function () {
+            count++;
+
+            if (count === 2) {
+                clearInterval();
+
+                detailBtns.forEach(btn => {
+                    btn.innerText = "Add to cart";
+                    btn.style.backgroundColor = "orange";
+                    btn.style.color = "black";
+                    btn.style.border = "var(--primary-color-btn-border)";
+                })
+            }
+        }, 1000);
     }
 }
 
-    // MODAL CART //
+// MODAL CART //
 
 const cartImg = document.querySelector(".cartImg");
 const cartInfo = document.querySelector(".cartInfo")
 
-function gameInCart (result) {
+function gameInCart(result) {
 
     let platform = result.tags;
 
@@ -177,35 +184,47 @@ function gameInCart (result) {
         cartImg.innerHTML += `<img class="imgCart" src="${img.src}">`
     })
 
-    for(let i = 0; i < platform.length; i++) {
+    for (let i = 0; i < platform.length; i++) {
         let gamePlatform = platform[0].name;
 
-    cartInfo.innerHTML +=  `<p class="cartName">${result.name}</p>
+        cartInfo.innerHTML += `<p class="cartName">${result.name}</p>
                             <p>${result.prices.price},-</p>
                             <p><strong>Platform:</strong> ${gamePlatform}</p>`
-                            break;
+        break;
     }
 };
 
 let count = 0;
-  
+
 for (let i = 0; i < closeModal.length; i++) {
-    closeModal[i].addEventListener("click", function() {
+    closeModal[i].addEventListener("click", function () {
         modal.style.display = "none";
-        
-        setInterval(function() {
-          count++;
-  
-          if(count === 2) {
-            clearInterval();
-  
-            detailBtns.forEach(btn => {
-              btn.innerText = "Add to cart";
-              btn.style.backgroundColor = "orange";
-              btn.style.color = "black";
-              btn.style.border = "var(--primary-color-btn-border)";
-            })
-          }
-        },1000);
+
+        setInterval(function () {
+            count++;
+
+            if (count === 2) {
+                clearInterval();
+
+                detailBtns.forEach(btn => {
+                    btn.innerText = "Add to cart";
+                    btn.style.backgroundColor = "orange";
+                    btn.style.color = "black";
+                    btn.style.border = "var(--primary-color-btn-border)";
+                })
+            }
+        }, 1000);
     });
+};
+
+const loader = document.querySelector(".loading");
+const main = document.querySelector("main");
+
+main.style.display = "none";
+
+window.onload = () => {
+    window.setInterval(function () {
+        loader.style.display = "none";
+        main.style.display = "block";
+    }, 1900)
 };
