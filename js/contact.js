@@ -77,3 +77,4 @@ function submitForm(event) {
 
 button.addEventListener("click", checkButton);
 button.addEventListener("click", submitForm);
+window.addEventListener("click", removeCart)

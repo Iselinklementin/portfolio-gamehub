@@ -152,3 +152,4 @@ function submitForm(event) {
  button.addEventListener("click", submitForm);
  button.addEventListener("click", validateForm);
 
+ window.addEventListener("click", removeCart)

@@ -2,7 +2,6 @@ const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
 const url = "https://grafs.no/wp-json/wc/store/products/" + id;
-// const loader = document.querySelector(".loader");
 const container = document.querySelector(".container");
 const detailBtns = document.querySelectorAll(".detail-btn");
 
@@ -11,14 +10,12 @@ async function fetchGame() {
         const response = await fetch(url);
         const result = await response.json();
 
-        // loader.remove();
         detailedInfo(result);
         introHeading(result);
         imgSection(result);
         gameInCart(result);
 
     } catch {
-        // loader.remove();
         container.classList.add("container-error");
         container.innerHTML = displayFailed();
     } finally {}
@@ -37,12 +34,13 @@ const reviews = document.querySelector(".reviews");
 
 function detailedInfo(result) {
 
-    if (result.name)
+    if (result.name) {
         gameName = result.name;
-    const nameCapitalized = gameName.charAt(0).toUpperCase() + gameName.slice(1)
-    title.innerText = `${nameCapitalized}`;
-    breadcrumbs.innerHTML = `<strong>${nameCapitalized}</strong>`;
-    heading.innerText = `${nameCapitalized}`;
+        const nameCapitalized = gameName.charAt(0).toUpperCase() + gameName.slice(1)
+        title.innerText = `${nameCapitalized}`;
+        breadcrumbs.innerHTML = `<strong>${nameCapitalized}</strong>`;
+        heading.innerText = `${nameCapitalized}`;
+    }
 };
 
 const image = document.querySelector(".img-header");
@@ -53,17 +51,12 @@ const genre = document.querySelector(".genre");
 function imgSection(result) {
     const imagelist = result.images;
     const imageSub = document.querySelector(".img-sub");
-    // console.log(imagelist)
 
     for (let i = 0; i < imagelist.length; i++) {
         image.src = imagelist[0].src;
         imageSub.src = imagelist[1].src;
 
     }
-    // imagelist.forEach(img => {
-    //     image.src = `${img.src}`
-    //     // console.log(img[0])
-    // });
 
     let category = result.categories;
     for (let i = 0; i < category.length; i++) {
@@ -128,7 +121,6 @@ function introHeading(result) {
 // MODAL - BUTTONS - CHANGE ON ADD //
 
 const modal = document.querySelector(".modal");
-// const idBtn = document.querySelector(".btn");
 const openModal = document.querySelectorAll("[data-open]");
 const closeModal = document.querySelectorAll("[data-close]");
 
@@ -149,27 +141,6 @@ detailBtns.forEach(btn => {
     })
 });
 
-window.onclick = function (event) {
-    if (event.target === modal) {
-        modal.style.display = "none";
-
-        setInterval(function () {
-            count++;
-
-            if (count === 2) {
-                clearInterval();
-
-                detailBtns.forEach(btn => {
-                    btn.innerText = "Add to cart";
-                    btn.style.backgroundColor = "orange";
-                    btn.style.color = "black";
-                    btn.style.border = "var(--primary-color-btn-border)";
-                })
-            }
-        }, 1000);
-    }
-}
-
 // MODAL CART //
 
 const cartImg = document.querySelector(".cartImg");
@@ -180,9 +151,7 @@ function gameInCart(result) {
     let platform = result.tags;
 
     const imagelist = result.images
-    imagelist.forEach(img => {
-        cartImg.innerHTML += `<img class="imgCart" src="${img.src}">`
-    })
+    cartImg.innerHTML += `<img class="imgCart" src="${imagelist[0].src}">`
 
     for (let i = 0; i < platform.length; i++) {
         let gamePlatform = platform[0].name;
@@ -228,3 +197,28 @@ window.onload = () => {
         main.style.display = "block";
     }, 1900)
 };
+
+
+function removeModal(e) {
+    if (e.target === modal) {
+        modal.style.display = "none";
+
+        setInterval(function () {
+            count++;
+
+            if (count === 2) {
+                clearInterval();
+
+                detailBtns.forEach(btn => {
+                    btn.innerText = "Add to cart";
+                    btn.style.backgroundColor = "orange";
+                    btn.style.color = "black";
+                    btn.style.border = "var(--primary-color-btn-border)";
+                })
+            }
+        }, 1000);
+    }
+};
+
+window.addEventListener("click", removeCart)
+window.addEventListener("click", removeModal)

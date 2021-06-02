@@ -10,3 +10,5 @@ function gameInCart () {
 };
 
 gameInCart();
+
+window.addEventListener("click", removeCart)

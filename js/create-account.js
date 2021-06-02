@@ -85,3 +85,5 @@ const isPasswordSecure = (password) => {
     const re = new RegExp("^(?=.*[a-z])(?=.*[A-Z])");
     return re.test(password);
 };
+
+window.addEventListener("click", removeCart)

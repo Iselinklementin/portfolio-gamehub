@@ -103,6 +103,7 @@ nav a:hover {
   font-size: 1.9rem;
   display: block;
   margin-top: 1.6rem;
+  cursor: pointer;
 }
 
 .search-bar {
@@ -167,6 +168,105 @@ h2 {
 
 .text-wrapper a {
   text-decoration: none;
+}
+
+
+.dropdown-background {
+  display: none;
+  position: fixed;
+  z-index: 15;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.11);
+}
+
+.shop-dropwdown {
+  position: absolute;
+  top: 14%;
+  right: 4%;
+}
+
+.shop {
+  background: white;
+  border: var(--primary-color) 2px solid;
+  padding: 10px;
+  /* height: 200px; */
+  border-radius: 14px;
+}
+
+.show-cart {
+  display: block;
+}
+
+.cart-game {
+  width: 50px;
+}
+
+.cart-gallery {
+  width: 100%;
+}
+
+#in-cart figure,
+#in-cart h3 {
+  padding: 0;
+  margin: 10px;
+}
+
+.img-cart {
+  height: 60px;
+  width: 40px;
+  object-fit: cover;
+}
+
+#gameinfo-cart {
+  display: flex;
+  flex-direction: row;
+  width: 360px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0.052);
+  border-bottom: 1px lightgray solid;
+}
+
+#gameinfo-cart a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+#price {
+  color: black;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.btn-container-cart {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-container-cart a {
+  margin-top: 1rem;
+}
+
+.btn-container-cart a:last-child {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.items-in-cart {
+  text-align: center;
+  color: black;
+}
+
+.trash {
+  cursor: pointer;
 }
 
 /* ----------   LOADER!   ------------ */

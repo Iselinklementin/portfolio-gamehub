@@ -234,3 +234,5 @@ window.onload = () => {
         main.style.display = "block";
     },1900)
 };
+
+window.addEventListener("click", removeCart)

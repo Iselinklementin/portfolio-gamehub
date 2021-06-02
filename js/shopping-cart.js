@@ -30,7 +30,6 @@ grafs();
 
 const gamesExtra = document.querySelector(".games-display");
 const products = document.querySelector(".cartProducts");
-// const productsContainer = document.querySelector(".products");
 
 function games(result) {
     let count = 0;
@@ -52,7 +51,7 @@ function games(result) {
 };
 
 products.insertAdjacentHTML("afterbegin", `<h2 class="cartHeader">Products</h2>`)
-products.insertAdjacentHTML("beforeend", `<a href="checkout.html" class="button button-blue">Proceed to checkout</a>`)
+products.insertAdjacentHTML("beforeend", `<a href="checkout.html" class="button button-blue cart-button">Proceed to checkout</a>`)
 
 function inCart(result) {
     let count = 0;
@@ -110,128 +109,20 @@ function inCart(result) {
     });
 
     function check() {
-        let btn = document.querySelector(".button");
+        let btn = document.querySelector(".cart-button");
         let cartHeader = document.querySelector(".cartHeader");
         let cartItems = products.children;
         const arrCart = Object.entries(cartItems);
-        let findItem = arrCart[1];
+        let firstItemInCart = arrCart[1];
 
-        if (findItem[1].classList.contains("cart-item-container")) {
-            console.log("yay")
+        if (firstItemInCart[1].classList.contains("cart-item-container")) {
             btn.href = "/checkout.html"
             btn.innerText = `Proceed to checkout`
 
         } else {
-            console.log("Gone")
             btn.href = "/shop.html"
             btn.innerText = `Go shopping`
-            cartHeader.insertAdjacentHTML("afterend", `<p>Your cart is empty</p>`);
+            cartHeader.insertAdjacentHTML("afterend", `<p class="empty">Your cart is empty.</p>`);
         }
     }
 };
-
-
-// let trashImg = document.querySelectorAll(".trash");
-// let trash = Array.from(trashImg);
-
-// const header = document.querySelector(".cartHeader");
-// console.log(header.nextElementSibling.classList === "cart-item-container")
-// arrCart.filter(cart => {
-//     console.log(cart)
-//     if(cart.className.includes("section.cart-item-container")) {
-//         console.log("this exists")
-//     }
-// })
-
-// if(arrCart.classList.contains("cart-item-container")) {
-//     console.log(this)
-// }
-// let items = Array.from(cartItems);
-// let itemsInCart = items.some(e => {
-//     e.className.includes("cart-item-container")
-// })
-
-// console.log(typeof items === 'object' && items !== null)
-// console.log(itemsInCart)
-
-
-// function checkCart(value, array) {
-//     return array.some(e => e === value)
-// }
-// checkCart(trashImg, items)
-// console.log(itemsInCart)
-
-// console.log(items.some(classList.contains("cart-item-container")))
-
-// items.forEach(i => {
-
-//     let numberOfItems = i.classList.contains("cart-item-container");
-//     let btn = document.querySelector(".button");
-//     // console.log(numberOfItems)
-
-//     // if (numberOfItems) {
-//     //     console.log(this)
-//     // }
-//     // if (numberOfItems > 0) {
-//     //     // console.log("true that")
-//     //     btn.href = "/checkout.html"
-//     //     btn.innerText = `Proceed to checkout`
-//     // } else if (!numberOfItems) {
-//     //     // console.log("false that")
-//     //     btn.href = "/shop.html"
-//     //     btn.innerText = `Go shopping`
-//     //     cartHeader.insertAdjacentHTML("afterend", `<p>Your cart is empty</p>`);
-//     // }
-
-//     // console.log(numberOfItems)
-// })
-
-
-// let cartItems = products.children;
-// let items = Array.from(cartItems);
-
-// function cartBtn() {
-
-//     items.forEach(i => {
-
-//         let numberOfItems = i.classList.contains("cart-item-container");
-//         let btn = document.querySelector(".button");
-
-//         // console.log(i)
-
-//         if (numberOfItems > 0) {
-//             // console.log("true that")
-//             btn.href = "/checkout.html"
-//             btn.innerText = `Proceed to checkout`
-//         } else if (numberOfItems) {
-//             // console.log("false that")
-//             btn.href = "/shop.html"
-//             btn.innerText = `Go shopping`
-//             cartHeader.insertAdjacentHTML("afterend", `<p>Your cart is empty</p>`);
-//         }
-//     });
-// };
-
-// cartBtn()
-
-
-
-
-//     // let cartItems = productsContainer.children;
-//     // let items = Array.from(cartItems);
-//     // console.log(items)
-//     // let cartItem = document.querySelectorAll("cart-item-container");
-//     // if(cartItem.length == 0) {
-//     //     let btn = document.querySelector(".button");
-//     //     btn.href = "/shop.html"
-//     //     btn.innerText = `Go shopping`
-//     // }
-// }
-
-// items.addEventListener("change", cartBtn)
-
-// .classList.includes("cart-item-container")
-
-// let cartItem = document.querySelectorAll(".cart-item-container");
-// cartItem.length--
-// console.log(cartItem.length)
