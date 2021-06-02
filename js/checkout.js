@@ -27,9 +27,9 @@ stick = buttonError.getBoundingClientRect().top + window.pageYOffset;
 
 window.onscroll = function() { 
   
-    if (window.pageYOffset > stick) { 
+    if (window.pageYOffset > stick && window.innerWidth < 500) { 
         buttonError.style.position = "fixed"; 
-        buttonError.style.top = "0px"; 
+        buttonError.style.top = "148px"; 
     } else { 
         buttonError.style.position = "relative"; 
         buttonError.style.top = "initial"; 
@@ -150,5 +150,4 @@ function submitForm(event) {
 
  button.addEventListener("click", submitForm);
  button.addEventListener("click", validateForm);
-
  window.addEventListener("click", removeCart)

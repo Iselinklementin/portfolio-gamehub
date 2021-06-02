@@ -2,6 +2,7 @@
  * Navbar get sticky
  * Add & remove classes if scrolled
  */
+
 const shopIcon = document.querySelector(".shoppingcart-icon");
 const logo = document.querySelector(".nav-logo-center");
 const burger = document.querySelector(".hamburger-label");
@@ -72,19 +73,18 @@ function cart() {
       let game = result[i];
 
       newHtml = `<section class="cart-item-container" id="in-cart">
-                              <div class="gameinfo" id="gameinfo-cart">
-                              <figure>
-                              <a href="details.html?id=${game.id}">
-                              <img src="${game.images[0].src}" alt="Picture of the ${game.name} cover" class="img-cart"/>
-                              </a>
-                              </figure>
-                              <h3><a href="details.html?id=${game.id}" class="gamelink">${game.name}</a></h3>
-
-                              <figure>
-                              <img src="/images/icons/trash.svg" alt="Remove game" class="trash" value="${game.id}" />
-                              </figure>
-                              </div>
-                              </section>`
+                  <div class="gameinfo" id="gameinfo-cart">
+                    <figure>
+                      <a href="details.html?id=${game.id}">
+                        <img src="${game.images[0].src}" alt="Picture of the ${game.name} cover" class="img-cart"/>
+                      </a>
+                    </figure>
+                    <h3><a href="details.html?id=${game.id}" class="gamelink">${game.name}</a></h3>
+                    <figure>
+                        <img src="/images/icons/trash.svg" alt="Remove game" class="trash" value="${game.id}" />
+                    </figure>
+                  </div>
+                </section>`
 
       paraCart.insertAdjacentHTML("afterend", newHtml)
 
