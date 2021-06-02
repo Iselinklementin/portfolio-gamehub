@@ -229,7 +229,7 @@ h2 {
 }
 
 .shop {
-  background: #eeebeb;
+  background: #ffffff;
   border: var(--primary-color) 2px solid;
   padding: 10px;
   border-radius: 14px;
@@ -266,7 +266,7 @@ h2 {
   align-items: center;
   padding: 0;
   background-color: rgba(255, 255, 255, 0.052);
-  border-bottom: 1px lightgray solid;
+  border-bottom: 1px rgb(185, 183, 183) solid;
 }
 
 #gameinfo-cart a {

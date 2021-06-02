@@ -7,7 +7,6 @@ const logo = document.querySelector(".nav-logo-center");
 const burger = document.querySelector(".hamburger-label");
 const searchbar = document.querySelector(".header-search");
 const backgroundMobile = document.querySelector(".background-mobile-nav");
-const checkbox = document.querySelector("#hamburger-menu");
 const nav = document.querySelector("nav");
 
 function handleScroll() {
