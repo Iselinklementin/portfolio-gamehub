@@ -1,6 +1,5 @@
 html {
-  background: url(/images/backgrounds/background-shop.jpg) no-repeat center
-    center;
+  background: url(/images/backgrounds/background-shop.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -318,7 +317,7 @@ figcaption {
   list-style-type: none;
 }
 
-.highlight > a {
+.highlight>a {
   color: var(--white-color);
   text-decoration: none;
 }
@@ -390,6 +389,7 @@ figure {
     justify-content: center;
     margin: auto;
   }
+
   .gallery-home-top {
     width: 162px;
     height: 240px;
@@ -491,6 +491,7 @@ figure {
     height: 20px;
     align-items: center;
   }
+
   .filtersyellow {
     display: initial;
     width: unset;

@@ -1,4 +1,39 @@
+/**
+ * Navbar get sticky
+ * Add & remove classes if scrolled
+ */
+const shopIcon = document.querySelector(".shoppingcart-icon");
+const logo = document.querySelector(".nav-logo-center");
+const burger = document.querySelector(".hamburger-label");
+const searchbar = document.querySelector(".header-search");
+const backgroundMobile = document.querySelector(".background-mobile-nav");
+const checkbox = document.querySelector("#hamburger-menu");
+const nav = document.querySelector("nav");
 
+function handleScroll() {
+  const scrolled = window.scrollY;
+
+  if (scrolled > 2) {
+    backgroundMobile.classList.add("scrolled")
+    nav.classList.add("scrolled");
+    shopIcon.classList.add("shop-scroll");
+    logo.classList.add("logo-scroll");
+    searchbar.classList.add("mobile-scroll")
+    burger.classList.add("mobile-scroll");
+    searchbar.style.marginTop = "-1.6rem";
+
+  } else {
+    nav.classList.remove("scrolled");
+    shopIcon.classList.remove("shop-scroll");
+    logo.classList.remove("logo-scroll");
+    searchbar.classList.remove("mobile-scroll")
+    burger.classList.remove("mobile-scroll");
+    backgroundMobile.classList.remove("scrolled")
+    searchbar.style.marginTop = "0";
+  }
+}
+
+window.addEventListener("scroll", handleScroll);
 
 // ERROR //
 
@@ -7,14 +42,12 @@ function displayError(message = "Ops! Something went wrong.") {
 };
 
 const searchfield = document.querySelector(".search-icon");
-const searchbar = document.querySelector(".header-search");
 const searchDesktop = document.querySelector(".search-bar");
 
 searchfield.onclick = () => {
   searchbar.classList.toggle("header-show");
 }
 
-const shopIcon = document.querySelector(".shoppingcart-icon");
 const shopDropdown = document.querySelector(".dropdown-background");
 const shopItems = document.querySelector(".shop");
 const paraCart = document.querySelector(".items-in-cart");
@@ -25,11 +58,6 @@ function showCart() {
 
 shopIcon.addEventListener("click", showCart)
 
-// window.onclick = function (event) {
-//   if (event.target == shopDropdown) {
-//     shopDropdown.classList.toggle("show-cart");
-//   }
-// };
 
 function cart() {
   let apiUrl = "https://grafs.no/wp-json/wc/v3/products?consumer_key=ck_842a940736a6103fd78f750256ff5ede2b209c25&consumer_secret=cs_091f907c9c293cf0810e8dc61f528d489f9eeb05";
@@ -52,7 +80,7 @@ function cart() {
                               </a>
                               </figure>
                               <h3><a href="details.html?id=${game.id}" class="gamelink">${game.name}</a></h3>
-                              <p class="price" id="price"><span class="valuta">NOK</span> 299<span>,-</span></p>
+
                               <figure>
                               <img src="/images/icons/trash.svg" alt="Remove game" class="trash" value="${game.id}" />
                               </figure>
@@ -103,8 +131,8 @@ cart();
 
 function removeCart(e) {
   if (e.target == shopDropdown) {
-      shopDropdown.classList.toggle("show-cart");
-    }
+    shopDropdown.classList.toggle("show-cart");
+  }
 }
 
 window.addEventListener("click", removeCart)

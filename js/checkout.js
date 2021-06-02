@@ -1,5 +1,5 @@
 const form = document.querySelectorAll("form");
-const button = document.querySelector(".button");
+const button = document.querySelector(".purchase-btn");
 
 const email = document.querySelector("#email");
 const street = document.querySelector("#street");
@@ -121,7 +121,6 @@ function validateForm() {
     checkedDelivery();
     checkedPay();
 };
-
 
 function required() {
     for (let j = 0; j < req.length; j++) {

@@ -702,6 +702,13 @@ h3 {
   .release-game3 {
     padding: 2px;
     margin: 0.2rem;
+    text-align: center;
+  }
+
+  .game-text {
+    display: block;
+    max-width: 300px;
+    margin: auto;
   }
 
   .gallery-bottom {

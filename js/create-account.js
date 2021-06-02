@@ -1,4 +1,4 @@
-const form = document.querySelector("create-account-form");
+const form = document.querySelector(".create-account-form");
 const button = document.querySelector("#submit");
 const email = document.querySelector("#email");
 const password = document.querySelector("#password");

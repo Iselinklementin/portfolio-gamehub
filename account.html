@@ -22,6 +22,7 @@
       <li><a href="#main">Skip to the main content</a></li>
     </ul>
 
+    <div class="background-mobile-nav"></div>
     <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars"></i></label>
     <input type="checkbox" id="hamburger-menu" />
     <div class="nav-logo-center">
@@ -36,8 +37,8 @@
         <div class="shop">
           <p class="items-in-cart">Items in cart:</p>
           <div class="btn-container-cart">
-            <a class="button purple" href="/shopping-cart.html">Shopping Cart</a>
-            <a class="button" href="/checkout.html">Checkout</a>
+            <a class="button purple" id="cart-btn-one" href="/shopping-cart.html">Shopping Cart</a>
+            <a class="button" id="cart-btn" href="/checkout.html">Checkout</a>
           </div>
         </div>
       </div>
@@ -60,7 +61,7 @@
                 <input type="search" placeholder="Search" aria-label="Search through site">
               </form>
             </div>
-            <!-- <li><a href="contact.html">Contact</a></li> -->
+
             <a href="#" class="search-icon"><i class="fas fa-search"></i></a>
             <a href="login.html" class="login" class="active" aria-current="page"><i class="far fa-user"></i><span
                 class="login-text">Log in</span></a>
@@ -79,7 +80,7 @@
         <h1>Account overview</h1>
         <div class="links-header">
           <a href="#" class="link log-out">Edit info</a>
-          <a href="#" class="link log-out">Log out</a>
+          <a href="/index.html" class="link log-out">Log out</a>
         </div>
       </section>
 
@@ -91,11 +92,11 @@
             <fieldset>
               <legend>Contact info</legend>
               <label class="name" for="name">First name / Surname</label>
-              <input type="text" name="name" id="name" class="form-input" placeholder="First name / Surname" />
+              <input type="text" name="name" id="name" class="form-input" placeholder="John Doe" />
               <label for="email">Email</label>
-              <input type="text" name="email" id="email" class="form-input" placeholder="Email" required />
+              <input type="text" name="email" id="email" class="form-input" placeholder="john@doe.com" required />
               <label for="phone">Phone number</label>
-              <input type="phone" name="phone" id="phone" class="form-input" placeholder="Phone number" />
+              <input type="phone" name="phone" id="phone" class="form-input" placeholder="919 99 919" />
               <a href="#" class="link">Edit contact info</a>
             </fieldset>
           </form>
@@ -106,11 +107,11 @@
             <fieldset>
               <legend>Address / Delivery</legend>
               <label for="street">Street</label>
-              <input type="text" name="street" id="street" class="form-input" placeholder="Street" />
+              <input type="text" name="street" id="street" class="form-input" placeholder="Doen street" />
               <label for="street">State</label>
-              <input type="text" name="state" id="state" class="form-input" placeholder="State" />
+              <input type="text" name="state" id="state" class="form-input" placeholder="John state" />
               <label for="postal-code">Postal code</label>
-              <input type="number" name="post-code" id="post-code" class="form-input" placeholder="Postal code" />
+              <input type="number" name="post-code" id="post-code" class="form-input" placeholder="5656" />
               <a href="#" class="link">Edit address</a>
             </fieldset>
           </form>

@@ -81,12 +81,16 @@ h2 {
   font-size: 1rem;
   font-family: inherit;
   text-align: center;
-  background-image: url(/images/icons/search.svg);
+  background-image: url(/images/icons/search-white.svg);
   background-repeat: no-repeat;
   background-position: 10px;
   background-size: 15px;
   color: var(--white-color);
   text-align: center;
+}
+
+input[type="search-sell"] {
+  color: white;
 }
 
 #search-sell:hover {

@@ -40,6 +40,7 @@ header {
   color: var(--primary-color);
 }
 
+
 nav,
 #hamburger-menu {
   display: none;
@@ -73,7 +74,6 @@ nav a:hover {
   padding-left: 30px;
   margin: 0;
   padding-bottom: 30px;
-  /* border: solid yellow thin; */
 }
 
 .nav-logo-center {
@@ -106,6 +106,43 @@ nav a:hover {
   cursor: pointer;
 }
 
+.scrolled {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: black;
+  height: 110px;
+  box-shadow: rgba(0, 0, 0, 0.082) 1px 2px 1px 1px;
+  z-index: 90;
+  margin-top: -2rem;
+}
+
+.shop-scroll {
+  z-index: 95;
+  position: fixed;
+  margin-top: 0.6rem;
+  right: 6%;
+}
+
+.logo-scroll {
+  z-index: 95;
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: -0.5rem;
+}
+
+.logo-scroll img {
+  width: 5rem;
+}
+
+.mobile-scroll {
+  position: fixed;
+  z-index: 100;
+  margin-top: -0.6rem;
+}
+
 .search-bar {
   display: none;
 }
@@ -136,6 +173,7 @@ input[type="search"] {
   padding: 0 1rem;
   text-align: center;
   font-size: 1rem;
+  color: black;
 }
 
 #search ::placeholder,
@@ -170,7 +208,6 @@ h2 {
   text-decoration: none;
 }
 
-
 .dropdown-background {
   display: none;
   position: fixed;
@@ -188,13 +225,13 @@ h2 {
   position: absolute;
   top: 14%;
   right: 4%;
+  max-width: 350px;
 }
 
 .shop {
-  background: white;
+  background: #eeebeb;
   border: var(--primary-color) 2px solid;
   padding: 10px;
-  /* height: 200px; */
   border-radius: 14px;
 }
 
@@ -225,7 +262,6 @@ h2 {
 #gameinfo-cart {
   display: flex;
   flex-direction: row;
-  width: 360px;
   justify-content: space-between;
   align-items: center;
   padding: 0;
@@ -234,8 +270,9 @@ h2 {
 }
 
 #gameinfo-cart a {
-  color: var(--primary-color);
+  color: black;
   text-decoration: none;
+  font-weight: 400;
 }
 
 #price {
@@ -251,11 +288,13 @@ h2 {
   align-items: center;
 }
 
-.btn-container-cart a {
+#cart-btn,
+#cart-btn-one {
+  display: block;
   margin-top: 1rem;
 }
 
-.btn-container-cart a:last-child {
+#cart-btn {
   margin-bottom: 1rem;
   margin-top: 1rem;
 }
@@ -263,6 +302,8 @@ h2 {
 .items-in-cart {
   text-align: center;
   color: black;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 
 .trash {
@@ -478,6 +519,17 @@ h2 {
     display: flex;
   }
 
+  .background-mobile-nav {
+    display: none;
+  }
+
+  .scrolled {
+    height: 110px;
+    box-shadow: rgba(0, 0, 0, 0.082) 1px 2px 1px 1px;
+    z-index: 90;
+    margin-top: -1.6rem;
+  }
+
   .header-search {
     display: none;
   }
@@ -572,6 +624,13 @@ h2 {
 @media (min-width: 1100px) {
   nav a {
     width: 27%;
+  }
+
+  .shop-scroll {
+    z-index: 95;
+    position: fixed;
+    margin-top: 1.2rem;
+    right: 11%;
   }
 
   .header-show {
