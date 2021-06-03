@@ -13,7 +13,10 @@ async function grafs() {
     gamesTopContainer.innerHTML = "";
     createHtml(result);
     filterGenre(result);
+
+    // removePlatform();
     filterPlatform(result);
+
   } catch (errorMessage) {
     gamesTopContainer.innerHTML = "";
     console.log(errorMessage);
@@ -107,6 +110,7 @@ const nintendoArrow = document.querySelector(".nintendo-arrow");
 function toggleNintendo() {
   platNameNintendo.classList.toggle("toggle-name");
   box.classList.toggle("toggle-box");
+  // nintendo.classList.toggle("active-button");
 
   if (nintendoArrow.classList.contains("show-arrow")) {
     nintendoArrow.classList.remove("show-arrow")
@@ -128,6 +132,7 @@ const pcArrow = document.querySelector(".pc-arrow");
 function togglePC() {
   platNamePC.classList.toggle("toggle-name");
   pcBox.classList.toggle("toggle-box");
+  // pc.classList.toggle("active-button");
 
   if (pcArrow.classList.contains("show-arrow")) {
     pcArrow.classList.remove("show-arrow")
@@ -149,6 +154,7 @@ const xboxArrow = document.querySelector(".xbox-arrow");
 function toggleXbox() {
   platNameXbox.classList.toggle("toggle-name");
   xboxBox.classList.toggle("toggle-box");
+  // xbox.classList.toggle("active-button");
 
   if (xboxArrow.classList.contains("show-arrow")) {
     xboxArrow.classList.remove("show-arrow")
@@ -170,50 +176,261 @@ const psArrow = document.querySelector(".ps-arrow");
 function togglePlaystation() {
   platNamePs.classList.toggle("toggle-name");
   psBox.classList.toggle("toggle-box");
+  // ps.classList.toggle("active-button");
 
   if (psArrow.classList.contains("show-arrow")) {
-    psArrow.classList.remove("show-arrow")
+    psArrow.classList.remove("show-arrow");
   } else {
     psArrow.classList.add("show-arrow");
+    // ps.classList.add("active-button")
   }
+  // if(ps.className.includes("active-button")) {
+
+  // }
 }
 
 ps.addEventListener("click", togglePlaystation);
 
 
-// Filter platform //
+// Toggle platform filter //
 
 const container = document.querySelectorAll(".containers")
+
+// function addActive() {
+//   for (let i = 0; i < container.length; i++) {
+//   container[i].onclick = function () {
+//     this.classList.add("active-button")
+//     // console.log(this)
+//   }
+// }
+// }
+
+// function removeActive() {
+//   for (let i = 0; i < container.length; i++) {
+//     container[i].onclick = function () {
+
+//       // console.log("noe")
+//       if (this.className.includes("active-button")) {
+//         console.log("noe")
+// console.log(this.classList[2])
+// this.className.remove("active-button")
+// this.classList[2].remove()
+// toggleXbox()
+
+// if (this.className.includes("xbox-filter")) {
+//   this.classList.remove("active-button")
+//   toggleXbox()
+
+// }
+// break;
+// if (this.className.includes("ps-filter")) {
+//   this.classList.remove("active-button")
+//   togglePlaystation()
+//   break;
+// }
+
+// if (this.className.includes("pc-filter")) {
+//   this.classList.remove("active-button")
+//   togglePC()
+//   break;
+// }
+
+// if (this.className.includes("nintendo-filter")) {
+//   this.classList.remove("active-button")
+//   toggleNintendo()
+//   break;
+// }
+//       }
+//     }
+//   }
+// }
+
+// removeActive()
+
+// function removePlatforms() {
+//   for (let i = 0; i < container.length; i++) {
+//     container[i].addEventListener("click", (e) =>  {
+
+//       // if (this.className.includes("active-button")) {
+//       //   console.log("noe")
+//       // }
+//       console.log(e.target)
+//       let containers = Array.from(e.target.parentElement.children)
+
+//       containers.map(item => {
+//         let classes = Array.from(item.classList)
+
+//         console.log(item)
+//         classes.filter(c => {
+//           if (c === "active-button") {
+//             // console.log(item)
+//             // console.log(c)
+//             if (item.className.includes("xbox-filter")) {
+//               item.classList.remove("active-button")
+//               toggleXbox()
+//             }
+
+//             if (item.className.includes("ps-filter")) {
+//               item.classList.remove("active-button")
+//               togglePlaystation()
+//             }
+
+//             if (item.className.includes("pc-filter")) {
+//               item.classList.remove("active-button")
+//               togglePC()
+//             }
+
+//             if (item.className.includes("nintendo-filter")) {
+//               item.classList.remove("active-button")
+//               toggleNintendo()
+//             }
+//             // console.log(this)
+//             // if (!item.className.includes("active-button")) {
+//             //   gamesTopContainer.innerHTML = "";
+//             //   createHtml(result);
+//             // }
+//           }
+//         })
+//       })
+//       // console.log(this)
+//       e.target.classList.add("active-button")
+//     }
+//     )}
+// };
+
+// removePlatforms()
+// removeActive()
+
+
+// function filterPlatform(result) {
+//   for (let i = 0; i < container.length; i++) {
+//     container[i].onclick = function () {
+
+//       const target = this.attributes[0];
+//       const value = target.value;
+//       this.classList.add("active-button");
+
+// // console.log(this)
+// //       this.classList.toggle("active-button");
+// //       // this.classList.add("current-active-button");
+
+//       for (let i = 0; i < result.length; i++) {
+//         let platformTag = result[i].tags;
+
+//         platformTag.filter(tag => {
+//           if (tag.name == value && this.classList.contains("active-button")) {
+
+//             gamesTopContainer.innerHTML = "";
+//             const list = result[i];
+//             const imagelist = list.images;
+
+//             gamesTopContainer.innerHTML += `<a href="details.html?id=${list.id}" class="card">
+//                                               <figure class="game1 game2 game3 game4 gamehover">
+//                                               <div class="games-java"><img class="gallery-top" id="games-java-css" src="${imagelist[0].src}"/></div>
+//                                               <div class="text-wrapper">
+//                                               <h3 class="game-name" text-decoration="none">${list.name}</h3>
+//                                               </div>
+//                                               </figure>
+//                                               </a>
+//                                              `
+//           }
+//         })
+
+//         // if (c !== "active-button") {
+//         //   console.log(this)
+//         // }
+
+//         if (!this.classList.contains("active-button")) {
+//           gamesTopContainer.innerHTML = "";
+//           createHtml(result);
+//           console.log(this)
+//         }
+//       }
+//     }
+//   }
+// };
+
+
+const loader = document.querySelector(".loading");
+const main = document.querySelector("main");
+
+main.style.display = "none";
+
+window.onload = () => {
+  window.setInterval(function () {
+    loader.style.display = "none";
+    main.style.display = "block";
+  }, 1900)
+};
+
+window.addEventListener("click", removeCart)
 
 function filterPlatform(result) {
   for (let i = 0; i < container.length; i++) {
 
+    // TURN OF THE OTHER BUTTONS ONCLICK
+    // ONLY ONE ACTIVE
+
     container[i].onclick = function () {
       gamesTopContainer.innerHTML = "";
+
+      if (this.className.includes("active-button")) {
+        // console.log("Now")
+        gamesTopContainer.innerHTML = "";
+        this.classList.toggle("active-button")
+        return createHtml(result);
+        // break;
+      }
+
+      // let count = 0;
       const target = this.attributes[0];
       const value = target.value;
+      // this.classList.remove("current-active-button");
 
-      // if (xboxArrow.classList.contains("show-arrow")) {
-      //   console.log("this")
-      //   xboxArrow.classList.remove("show-arrow")
-      //   platNameXbox.classList.toggle("toggle-name");
-      //   xboxBox.classList.toggle("toggle-box");
-      // }
+      let containers = Array.from(this.parentElement.children)
 
-      // let containers = Object.entries(container)
-      // // console.log(containers)
-      // containers.filter(box => {
-      //   // console.log(box[1])
-      //   box.map(c => {
-      //     console.log(c)
-      //   })
-      //   // if (box[1].classList.contains("active-button")) {
-      //   //   console.log(this.classList)
-      //   //   // this.classList.remove("active-button")
-      //   // }
-      // })
+      containers.map(item => {
+        let classes = Array.from(item.classList)
+
+        classes.filter(c => {
+          if (c === "active-button") {
+            // count++
+            // console.log(item)
+            if (item.className.includes("xbox-filter")) {
+              item.classList.remove("active-button")
+              toggleXbox()
+            }
+
+            if (item.className.includes("ps-filter")) {
+              item.classList.remove("active-button")
+              togglePlaystation()
+            }
+
+            if (item.className.includes("pc-filter")) {
+              item.classList.remove("active-button")
+              togglePC()
+            }
+
+            if (item.className.includes("nintendo-filter")) {
+              item.classList.remove("active-button")
+              toggleNintendo()
+            }
+
+            // count++
+            // console.log(this.className)
+            // console.log(count)
+
+            // if (this)
+            // if (!item.className.includes("active-button")) {
+            //   gamesTopContainer.innerHTML = "";
+            //   createHtml(result);
+            // }
+          }
+        })
+      })
 
       this.classList.toggle("active-button");
+      // this.classList.add("current-active-button");
 
       for (let i = 0; i < result.length; i++) {
         let platformTag = result[i].tags;
@@ -235,43 +452,65 @@ function filterPlatform(result) {
                                              `
           }
         })
-        
-        // let containers = Object.entries(container);
 
-        // containers.filter(box => {
-        //   // console.log(box)
-        //   for(let i = 0; i < box.length; i++) {
-        //     // console.log(box[i].className)
-        //     if(box[i].className) {
-        //       console.log("this")
-        //     }
-        //   }
-        //   // if (!box.classList.contains("active-button")) {
-        //   //   // console.log(this)
-        //   //   // gamesTopContainer.innerHTML = "";
-        //   //   // createHtml(result);
-        //   // }
-        // })
+        // if (c !== "active-button") {
+        //   console.log(this)
+        // }
 
-        if (!this.classList.contains("active-button")) {
-          gamesTopContainer.innerHTML = "";
-          createHtml(result);
-        }
+        // if (!this.classList.contains("active-button")) {
+        //   gamesTopContainer.innerHTML = "";
+        //   createHtml(result);
+        //   console.log(this)
+        // }
       }
     }
+
   }
 };
 
-const loader = document.querySelector(".loading");
-const main = document.querySelector("main");
 
-main.style.display = "none";
 
-window.onload = () => {
-  window.setInterval(function () {
-    loader.style.display = "none";
-    main.style.display = "block";
-  }, 1900)
-};
+// function filterPlatform2(result) {
+//   gamesTopContainer.innerHTML = "";
 
-window.addEventListener("click", removeCart)
+//   for (let i = 0; i < container.length; i++) {
+//     container[i].onclick = function (e) {
+
+//       const target = e.target.attributes[0];
+//       const value = e.target.value;
+
+//       for (let i = 0; i < result.length; i++) {
+//         let platformTag = result[i].tags;
+
+//         platformTag.filter(tag => {
+//           if (tag.name == value && this.classList.contains("active-button")) {
+
+//             const list = result[i];
+//             const imagelist = list.images;
+
+//             gamesTopContainer.innerHTML += `<a href="details.html?id=${list.id}" class="card">
+//                                               <figure class="game1 game2 game3 game4 gamehover">
+//                                               <div class="games-java"><img class="gallery-top" id="games-java-css" src="${imagelist[0].src}"/></div>
+//                                               <div class="text-wrapper">
+//                                               <h3 class="game-name" text-decoration="none">${list.name}</h3>
+//                                               </div>
+//                                               </figure>
+//                                               </a>
+//                                              `
+//           }
+//         })
+
+//         // if (c !== "active-button") {
+//         //   console.log(this)
+//         // }
+
+//         if (!this.classList.contains("active-button")) {
+//           gamesTopContainer.innerHTML = "";
+//           createHtml(result);
+//           console.log(this)
+//         }
+//       }
+
+//     }
+//   }
+// }
