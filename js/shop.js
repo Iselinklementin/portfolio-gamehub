@@ -263,12 +263,14 @@ function filterPlatform(result) {
 
             gamesTopContainer.innerHTML += `<a href="details.html?id=${list.id}" class="card">
                                               <figure class="game1 game2 game3 game4 gamehover">
-                                              <div class="games-java"><img class="gallery-top" id="games-java-css" src="${imagelist[0].src}"/></div>
-                                              <div class="text-wrapper">
-                                              <h3 class="game-name" text-decoration="none">${list.name}</h3>
-                                              </div>
+                                                <div class="games-java">
+                                                  <img class="gallery-top" id="games-java-css" src="${imagelist[0].src}"/>
+                                                </div>
+                                                <div class="text-wrapper">
+                                                  <h3 class="game-name" text-decoration="none">${list.name}</h3>
+                                                </div>
                                               </figure>
-                                              </a>
+                                            </a>
                                              `
           }
         })

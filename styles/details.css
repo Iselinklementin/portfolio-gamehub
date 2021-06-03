@@ -62,16 +62,9 @@ h1 {
   max-width: 960px;
 }
 
-/* .gameinfo,
-.system {
-  display: none;
-} */
-
 .reviews {
   padding: 0;
   color: white;
-  /* margin: auto;
-  display: flex; */
   text-align: center;
 }
 
@@ -99,13 +92,7 @@ h1 {
 .game-details {
   display: flex;
   justify-content: space-evenly;
-  /* margin-bottom: 4rem;
-  border: red solid thin; */
 }
-
-/* .gameinfo {
-  border: red solid thin;
-} */
 
 .flex-platform-release {
   display: flex;
@@ -141,36 +128,6 @@ h1 {
   display: flex;
   justify-content: center;
 }
-
-/* .rate {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  margin: 2rem auto 1rem auto;
-  width: 280px;
-} */
-
-/* .rating {
-  margin-top: 8rem;
-} */
-
-/* .ratings-box {
-  display: flex;
-  border-radius: 6px;
-  color: white;
-  align-items: center;
-  width: 100%;
-} */
-
-/* .recommended {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-}
-
-.recommended p {
-  margin: 4px 0;
-} */
 
 /* ----------- */
 
@@ -211,10 +168,6 @@ h3 {
   color: var(--primary-color);
 }
 
-/* .details-header {
-  display: flex;
-} */
-
 .intro-heading {
   text-align: center;
   width: 100%;
@@ -232,10 +185,6 @@ h3 {
 }
 
 #buy-extra {
-  /* margin: 3rem auto 2rem auto; */
-  /* position: absolute; */
-  /* left: 0;
-  right: 0; */
   margin: 2rem auto;
 }
 
@@ -408,22 +357,13 @@ h2 {
   .reviews {
     display: block;
     margin: 0 0 3rem 0;
-    /* position: absolute;
-    right: -90%;
-    top: -4rem;
-    background-color: var(--secondary-color-blue); */
   }
 
   .reviews span {
     color: var(--primary-color);
   }
 
-  /* .gameinfo {
-    margin-right: 5px;
-  } */
-
   .flex-platform-release {
-    /* justify-content: left; */
     justify-content: center;
     width: 100%;
     margin: 0;
@@ -433,10 +373,6 @@ h2 {
   .platform span {
     display: initial;
   }
-
-  /* .platform {
-    justify-content: center;
-  } */
 
   .intro-text {
     text-align: left;
@@ -449,7 +385,6 @@ h2 {
     padding: 20px;
     max-width: 700px;
     margin: auto;
-    /* margin-bottom: 5rem; */
   }
 
   table {
@@ -475,31 +410,7 @@ h2 {
 @media only screen and (min-width: 890px) {
   .container {
     margin-top: 1rem;
-    /* margin-bottom: 13rem; */
   }
-
-  /* .rate {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    margin: 1rem auto;
-    width: 100%;
-    display: none;
-  }
-
-  .ratings-box {
-    display: flex;
-    border-radius: 6px;
-    color: white;
-    align-items: center;
-    width: 100%;
-  }
-
-  .recommended {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-  } */
 
   .breadcrumbs {
     margin-left: 1.4rem;
@@ -517,7 +428,6 @@ h2 {
 
   #buy-extra {
     position: relative;
-    /* margin: 1rem 0; */
     margin: 2rem 0;
   }
 }
@@ -526,34 +436,15 @@ h2 {
   h1 {
     font-size: 3rem;
     text-align: left;
-    /* margin-top: -1.8rem; */
   }
-
-  /* .container {
-    margin-bottom: unset;
-  } */
 
   .breadcrumbs {
     margin-left: 7%;
   }
 
   .img-details-info-wrap {
-    /* width: 30%; */
-    /* height: 1000px; */
     padding: 1rem;
   }
-
-  /* .img-header {
-    height: 45%;
-  } */
-
-  /* .flex-platform-release {
-    flex-direction: row;
-  } */
-
-  /* #buy-extra {
-    display: none;
-  } */
 
   .rating {
     margin-top: 1rem;

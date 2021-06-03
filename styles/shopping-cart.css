@@ -190,7 +190,6 @@ h2 {
 
 .empty {
   padding: 15px 0 0 0;
-  /* background: rgba(255, 255, 255, 0.233); */
 }
 
 /* MEDIA 650px */
@@ -210,7 +209,6 @@ h2 {
 
   .gameinfo {
     width: auto;
-    /* max-width: 450px; */
     justify-content: space-between;
     align-items: center;
     padding-bottom: 10px;
@@ -302,10 +300,6 @@ h2 {
   .games-display {
     padding-top: 1rem;
   }
-
-  /* .button {
-
-  } */
 }
 
 /* MEDIA 1130px */

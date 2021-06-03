@@ -22,13 +22,15 @@ function games(result) {
     result.filter(game => {
 
         gamesTopContainer.innerHTML += `<a href="details.html?id=${game.id}" class="card">
-                                    <figure class="game1 game2 game3 game4 gamehover">
-                                    <div class="games-java"><img class="gallery-top" id="games-java-css" src="${game.images[0].src}"/></div>
-                                    <div class="text-wrapper">
-                                    <h3 class="game-name" text-decoration="none">${game.name}</h3>
-                                    </div>
-                                    </figure>
-                                    </a>`
+                                            <figure class="game1 game2 game3 game4 gamehover">
+                                                <div class="games-java">
+                                                    <img class="gallery-top" id="games-java-css" src="${game.images[0].src}"/>
+                                                </div>
+                                                <div class="text-wrapper">
+                                                    <h3 class="game-name" text-decoration="none">${game.name}</h3>
+                                                </div>
+                                            </figure>
+                                        </a>`
     })
 };
 

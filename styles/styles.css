@@ -489,7 +489,6 @@ h2 {
 }
 
 .platforms {
-  border: red solid thin;
   text-align: left;
   display: flex;
   flex-wrap: wrap;

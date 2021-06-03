@@ -21,8 +21,7 @@ async function grafs() {
         inCart(result)
 
     } catch (errorMessage) {
-        // gamesTopContainer.innerHTML = "";
-        // console.log(errorMessage);
+        console.log(errorMessage);
     }
 }
 
@@ -39,9 +38,9 @@ function games(result) {
         let game = result[i];
 
         gamesExtra.innerHTML += `<figure class="game">
-                                <a href="details.html?id=${game.id}">
-                                <img class="gallery" src="${game.images[0].src}" alt="Picture of the ${game.name} cover"/></a>
-                                <a href="details.html?id=${game.id}" class="gamelink">${game.name}</a>
+                                    <a href="details.html?id=${game.id}">
+                                        <img class="gallery" src="${game.images[0].src}" alt="Picture of the ${game.name} cover"/></a>
+                                    <a href="details.html?id=${game.id}" class="gamelink">${game.name}</a>
                                 </figure>
                                 `
         if (count === 6) {
