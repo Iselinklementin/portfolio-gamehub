@@ -1,5 +1,6 @@
 This is my first project when I started my studies on Noroff.
-Gamehub is a cross-course project with different criterea as we went along in our lessons.
+
+Gamehub is a cross-course project and had different criterea to submission as we went along in our lessons.
 
 # Course Assignment / HTML - CSS
 
