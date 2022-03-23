@@ -3,7 +3,7 @@ This is my first project when I started my studies on Noroff.
 Gamehub is a cross-course project and had different criterea to submission.
 
 # Course Assignment
-## HTML - CSS
+**HTML - CSS**
 
 ### Goal
 To put into practice everything you’ve learned about HTML and CSS over this course.
@@ -22,7 +22,7 @@ Certain functionality that requires JavaScript can be mimicked for now, for exam
 - You may use external sources to show you how to achieve specific effects, and these should be included in your report.
 
 # Course Assignment
-## Interaction Design
+**Interaction Design**
 
 ## Brief
 In this assignment you will work on your cross-course project to:
