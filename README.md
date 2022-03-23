@@ -1,4 +1,7 @@
-# Course Assignment
+This is my first project when I started my studies on Noroff.
+Gamehub is a cross-course project with different criterea as we went along in our lessons.
+
+# Course Assignment / HTML - CSS
 
 ### Goal
 To put into practice everything you’ve learned about HTML and CSS over this course.
@@ -16,7 +19,7 @@ Certain functionality that requires JavaScript can be mimicked for now, for exam
 - Each page should have a unique meta description, title, and h1.
 - You may use external sources to show you how to achieve specific effects, and these should be included in your report.
 
-# Course Assignment
+# Course Assignment / Interaction Design
 
 ## Brief
 In this assignment you will work on your cross-course project to:
@@ -26,7 +29,7 @@ In this assignment you will work on your cross-course project to:
 
 ## Process
 
-- Look over the data collected from Hotjar and determine whether there are any aspects of the site that could cause problems for users. Consider conducting further contextual inquiry interviews. These interviews will allow you to see users interacting with the site in-person.
+- Look over the data collected from Hotjar and determine whether there are any aspects of the site that could cause problems for users. Consider conducting further contextual inquiry interviews. This will allow you to see users interacting with the site in-person.
 - Perform accessibility testing on your website to ensure it’s easy to use for users with accessibility issues.
 - Decide on which areas of the site to focus and then improve the interactions for users.
 - Use your skills in JavaScript, HTML, and CSS to improve the website.
