@@ -1,4 +1,4 @@
-This is my first project when I started my studies on Noroff.
+This was my first project when I started my studies on Noroff.
 
 Gamehub is a cross-course project and had different criterea to submission.
 
